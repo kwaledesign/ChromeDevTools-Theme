@@ -1,0 +1,47 @@
+//~~~~ SETTINGS ~~~~//
+
+@import "variables";
+#settings-screen {
+  .help-window-main {
+    color: $white;
+    background: $base01;
+    box-shadow: none;
+    border: 3px solid $base02;
+  }
+  .help-container-wrapper label {
+    color: $base1;
+    &:hover {
+      color: $white;
+    }
+  }
+  .help-section-title {
+    color: $blue;
+  }
+  .settings-tab select {
+    padding: 5px;
+    -webkit-appearance: none;
+    background: $base02;
+    border: none;
+  }
+  .tabbed-pane-header {
+    background: none !important;
+    .tabbed-pane-header-tab {
+      padding-top: 9px;
+      background: none !important;
+      &.selected {
+        color: $blue;
+      }
+    }
+  }
+  .settings-tab .settings-list-container {
+    background: $white;
+  }
+  .settings-experiments-warning-subsection-warning {
+    color: $red;
+  }
+  .no-file-systems-message {
+    padding: 8px;
+    background: $base02;
+    color: $white;
+  }
+}

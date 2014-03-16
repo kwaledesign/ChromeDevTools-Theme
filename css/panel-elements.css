@@ -1,0 +1,239 @@
+/**
+ * Variables
+ *
+ */
+/* line 4, ../sass/panel-elements.scss */
+.elements-tree-outline {
+  background: #002b36;
+}
+
+/* line 5, ../sass/panel-elements.scss */
+ol.elements-tree-outline .selected {
+  background: #073642;
+}
+/* line 8, ../sass/panel-elements.scss */
+ol.elements-tree-outline .selected .selection {
+  background: #073642 !important;
+}
+
+/* line 13, ../sass/panel-elements.scss */
+.webkit-html-tag-name,
+.styles-section .simple-selector.selector-matches, .styles-section .selector {
+  color: #859900;
+}
+
+/* line 18, ../sass/panel-elements.scss */
+.webkit-html-tag {
+  color: #2aa198;
+}
+
+/* line 22, ../sass/panel-elements.scss */
+.webkit-html-tag-name {
+  color: #859900;
+}
+
+/* line 26, ../sass/panel-elements.scss */
+.webkit-html-attribute-name {
+  color: #b58900;
+}
+
+/* line 30, ../sass/panel-elements.scss */
+.webkit-html-attribute-value {
+  color: #586e75;
+}
+
+/* line 34, ../sass/panel-elements.scss */
+span.webkit-html-text-node.bogus {
+  color: #268bd2;
+}
+
+/* line 38, ../sass/panel-elements.scss */
+.webkit-html-pseudo-element {
+  color: #dc322f;
+}
+
+/* line 42, ../sass/panel-elements.scss */
+.webkit-html-comment {
+  color: #586e75;
+}
+
+/* line 46, ../sass/panel-elements.scss */
+.webkit-css-property {
+  color: #b58900;
+}
+
+/* line 50, ../sass/panel-elements.scss */
+.metrics-and-styles .properties .value {
+  color: #cb4b16;
+}
+
+/* line 54, ../sass/panel-elements.scss */
+.inspector-footer.status-bar {
+  padding: 5px;
+  background-color: #073642;
+  border-top: 1px solid #839496;
+}
+/* line 58, ../sass/panel-elements.scss */
+.inspector-footer.status-bar .toolbar-search-control {
+  background-color: #839496;
+  border: none;
+}
+/* line 62, ../sass/panel-elements.scss */
+.inspector-footer.status-bar .toolbar-search button {
+  padding: 3px;
+  background: #839496;
+  color: #f4f4f4;
+  border-radius: 0;
+  border: none;
+  font-size: 10px;
+}
+
+/* line 72, ../sass/panel-elements.scss */
+.split-view {
+  background: #002b36;
+}
+
+/* line 73, ../sass/panel-elements.scss */
+.split-view.hbox > .split-view-resizer {
+  width: 3px;
+  background: #93a1a1;
+}
+
+/* line 80, ../sass/panel-elements.scss */
+.sidebar-separator {
+  padding: 5px;
+  background: #002b36;
+  border-bottom: 1px solid #073642;
+  color: #f4f4f4;
+}
+
+/* line 87, ../sass/panel-elements.scss */
+.styles-section {
+  padding: 5px;
+  border-bottom: 1px solid #93a1a1;
+}
+/* line 90, ../sass/panel-elements.scss */
+.styles-section.user-rule.read-only {
+  background-color: #93a1a1;
+}
+/* line 92, ../sass/panel-elements.scss */
+.styles-section.user-rule.read-only .header .subtitle {
+  color: #a3def2;
+}
+
+/* line 98, ../sass/panel-elements.scss */
+.tabbed-pane-header-tabs-drop-down {
+  color: #268bd2;
+}
+
+/* line 102, ../sass/panel-elements.scss */
+.styles-element-state-pane {
+  padding: 10px;
+  background: #586e75;
+  border-bottom: 1px solid #839496 !important;
+}
+
+/* line 109, ../sass/panel-elements.scss */
+.sidebar-tabbed-pane .tabbed-pane-header {
+  flex-basis: 24px;
+  font-size: 10px;
+}
+/* line 112, ../sass/panel-elements.scss */
+.sidebar-tabbed-pane .tabbed-pane-header .tabbed-pane-header-tab {
+  padding: 4px 1px;
+}
+
+/* line 119, ../sass/panel-elements.scss */
+.events-pane .section {
+  padding: 5px;
+}
+/* line 121, ../sass/panel-elements.scss */
+.events-pane .section:not(:nth-of-type(1)) {
+  border-top: 1px solid #073642;
+}
+/* line 125, ../sass/panel-elements.scss */
+.events-pane .name {
+  color: #f4f4f4;
+}
+
+/* line 130, ../sass/panel-elements.scss */
+.console-formatted-function {
+  color: #b58900;
+}
+
+/* line 134, ../sass/panel-elements.scss */
+.console-formatted-string {
+  color: #a3def2;
+}
+
+/* line 138, ../sass/panel-elements.scss */
+.console-formatted-boolean {
+  color: #859900;
+}
+
+/* line 142, ../sass/panel-elements.scss */
+.console-formatted-number {
+  font-weight: bold;
+  color: #859900;
+}
+
+/* line 147, ../sass/panel-elements.scss */
+.console-formatted-array {
+  color: #268bd2;
+}
+
+/* line 151, ../sass/panel-elements.scss */
+.console-formatted-object {
+  color: #cb4b16;
+}
+
+/* line 157, ../sass/panel-elements.scss */
+#elements-crumbs {
+  flex-basis: 24px;
+  background: #586e75;
+  color: #93a1a1;
+  border-top: 1px solid #073642;
+  border-bottom: 1px solid #073642;
+}
+/* line 163, ../sass/panel-elements.scss */
+#elements-crumbs .crumbs .crumb {
+  height: 24px;
+  padding-top: 2px;
+  border-right: 1px solid #073642;
+}
+/* line 167, ../sass/panel-elements.scss */
+#elements-crumbs .crumbs .crumb:hover {
+  background: #657b83;
+  color: #f4f4f4;
+}
+/* line 171, ../sass/panel-elements.scss */
+#elements-crumbs .crumbs .crumb.selected.start {
+  background: #073642;
+}
+
+/* line 180, ../sass/panel-elements.scss */
+.panel.elements .metrics {
+  color: #073642;
+}
+/* line 182, ../sass/panel-elements.scss */
+.panel.elements .metrics .position:hover {
+  color: #f4f4f4;
+}
+
+/* line 189, ../sass/panel-elements.scss */
+.event-bars .event-bar .header::before {
+  opacity: 1;
+  -webkit-mask-position: -4px -96px;
+  background: none;
+  background-color: #93a1a1;
+  -webkit-mask-image: url(Images/statusbarButtonGlyphs.png);
+}
+/* line 196, ../sass/panel-elements.scss */
+.event-bars .event-bar .header .title {
+  text-shadow: none;
+}
+
+/* line 201, ../sass/panel-elements.scss */
+div.split-view-contents.scroll-target.split-view-contents-first.split-view-main.vbox {
+  overflow: hidden;
+}

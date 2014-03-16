@@ -1,0 +1,63 @@
+//~~~~ NETWORK ~~~~//
+@import "variables";
+.panel-status-bar {
+  flex-basis: 36px;
+  padding: 5px;
+  border-bottom: 1px solid $base02;
+}
+
+.filter-bitset-filter li.selected {
+  background-color: $blue;
+  border-radius: 2px;
+}
+
+.network-log-grid.data-grid {
+
+  th, th.sort-descending,
+  th.sort-ascending {
+    background: $base01;
+  }
+
+  tr.filler {
+    background: $base02 !important;
+  }
+
+  tr.odd:not(.selected) {
+    background-color: $base01;
+  }
+
+  th, td {
+    border: 1px solid $base0 !important;
+  }
+
+  .data-container {
+    top: 37px;
+  }
+}
+
+.data-grid table.data, .network-log-grid.data-grid table.data {
+  background-image:none;
+}
+
+.panel.network {
+  .data-grid th {
+    background: $base01;
+  }
+  .tabbed-pane-header .tabbed-pane-header-tab {
+    font-size: 10px;
+    padding-top: 7px;
+  }
+}
+
+.network-summary-bar {
+  flex-basis: 30px;
+  padding: 5px;
+  background: $base01;
+  border-top: 1px solid $base0;
+  color: $white;
+}
+
+#network-views .network-item-view .tabbed-pane-header {
+  flex-basis: 30px;
+  padding-top: 0;
+}

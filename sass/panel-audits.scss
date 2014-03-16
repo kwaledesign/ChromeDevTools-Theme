@@ -1,0 +1,23 @@
+//~~~~ AUDITS ~~~~//
+@import "variables";
+.panel.audits {
+  .audit-launcher-view .audit-launcher-view-content {
+    background: $base01;
+    color: $white;
+  }
+  .sidebar-tree-section {
+    padding: 5px;
+    color: $base1;
+    text-shadow: none;
+  }
+  .audit-launcher-view div.button-container > button {
+    background: $blue;
+    border: none;
+    border-radius: 3px;
+    color: $white;
+    body.inactive & {
+      background: $base1;
+      color: $base00;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+//~~~~ TIMELINE ~~~~//
+
+@import "variables";
+.panel.timeline {
+  .timeline-records-title, .timeline-records-list {
+    background: $base01;
+    color: $white;
+  }
+  .resources-dividers-label-bar {
+    padding: 5px;
+    background: $base0;
+    color: $white;
+  }
+  .timeline-details-view-title {
+    flex-basis: 30px;
+    padding: 5px;
+    background: $base01;
+    border-top: 1px solid $base0;
+    color: $white;
+  }
+  #timeline-overview-sidebar .sidebar-tree-item.selected {
+    background: $blue;
+    border-left: 6px solid $blue-lightest;
+    color: $white;
+    .icon {
+      background-color: $white;
+    }
+  }
+  #timeline-overview-frames canvas {
+    background: $base01;
+  }
+  #memory-graphs-container .split-view-contents-first {
+    background: $base01;
+    .sidebar-tree.sidebar-tree-section {
+      text-shadow: none;
+      color: $base1;
+    }
+  }
+  .timeline-aggregated-info-legend, .timeline-details-view-block {
+    color: $white;
+  }
+  .timeline-tree-item .data.dimmed, .timeline-details-view-row-title {
+    color: $base1;
+  }
+  .overview-grid-window-rulers {
+    background: $white;
+  }
+}
+
+.overview-grid-window {
+  background: $blue;
+}
+
+#timeline-overview-sidebar .icon {
+  background: $base1;
+}

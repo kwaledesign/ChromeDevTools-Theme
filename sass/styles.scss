@@ -1,0 +1,689 @@
+@import "variables";
+@import "toolbars";
+@import "panel-elements";
+@import "console";
+@import "panel-network";
+@import "panel-sources";
+@import "panel-profile";
+@import "panel-timeline";
+@import "panel-resources";
+@import "panel-audits";
+@import "settings";
+
+::-webkit-scrollbar {
+  background-color: #31353a;
+  bottom: 0;
+  width:  15px !important;
+  height: 15px !important;
+}
+::-webkit-scrollbar-track {
+  width: 10px;
+  border-radius: 10px;
+  background-color: #31353a;
+}
+::-webkit-scrollbar-thumb {
+  width: 15px;
+  box-shadow: inset 0 0 1px #aaa;
+  border: 2px solid transparent;
+  border-left-width:1.5px;
+  background-clip: content-box;
+  border-radius:5px !important;
+  background-color: #4b4f53;
+ }
+::-webkit-scrollbar-thumb:hover {
+   background-color: #54595e;
+   box-shadow: inset 0 0 1px #ccc;
+}
+::-webkit-scrollbar-thumb:active {
+   background-color: #6c7177;
+   box-shadow: inset 0 0 1px #fff;
+}
+
+.CodeMirror-hscrollbar {
+  right: 15px !important;
+  border-right:1px solid #222 !important;
+}
+.CodeMirror-vscrollbar {
+  bottom: 0 !important;
+}
+.CodeMirror-scrollbar-filler {
+  display:none !important;
+}
+
+// Reset State
+.styles-section.matched-styles .properties li.parent .expand-element,
+.properties-tree li.parent::before,
+.section > .header::before,
+.sidebar-pane-title::before,
+.audit-result-tree li.parent::before,
+.status-bar-select-arrow,
+.data-grid th.sort-descending > div::after,
+.data-grid th.sort-ascending > div::after,
+.timeline-expandable-arrow,
+.filter-checkbox-filter .checkbox-filter-checkbox-checked {
+  opacity: 1;
+  background: none;
+  background-color: $blue;
+  -webkit-mask-image: url(Images/statusbarButtonGlyphs.png);
+}
+
+// Default State = Right Arrow
+.styles-section.matched-styles .properties li.parent .expand-element,
+.properties-tree li.parent::before,
+.section > .header::before,
+.sidebar-pane-title::before,
+.audit-result-tree li.parent::before,
+.timeline-expandable-collapsed .timeline-expandable-arrow {
+  -webkit-mask-position: -4px -96px;
+}
+
+// Expanded State = Down
+.styles-section.matched-styles .properties li.parent.expanded .expand-element,
+.properties-tree li.parent.expanded::before,
+.section.expanded > .header::before,
+.sidebar-pane-title.expanded::before,
+.audit-result-tree li.parent.expanded::before,
+.timeline-expandable-expanded .timeline-expandable-arrow {
+  -webkit-mask-position: -20px -96px;
+}
+
+// Default State = Down
+.status-bar-select-arrow,
+.data-grid th.sort-descending > div::after {
+  -webkit-mask-position: -20px -96px;
+}
+
+// Expanded State = Up
+.data-grid th.sort-ascending > div::after {
+  -webkit-mask-position: -4px -108px;
+}
+
+.filter-checkbox-filter .checkbox-filter-checkbox-checked {
+  -webkit-mask-position: -129px -110px;
+  background-color: $white;
+}
+
+//~~~~ GLOBAL ELEMENTS ~~~~//
+#console-messages,
+.console-view-wrapper,
+#console-view,
+.CodeMirror-scroll,
+.drawer .revision-history-drawer,
+.dialog .fill, .panel,
+.console-status-bar,
+.help-window-main,
+.tabbed-pane-content,
+.tabbed-pane-content.has-no-tabs,
+.sidebar-overlay,
+.styles-section.read-only,
+.split-view-vertical .sidebar-pane.composite .properties-tree,
+.panel:not(.elements),
+.panel:not(.extension-panel),
+#network-views .CodeMirror-lines,
+#script-view-fallback,
+.panel-status-bar,
+.sidebar, body.inactive .sidebar {
+  color: $white;
+  background: $base0; //red;
+}
+
+
+// main console pannel bg color
+#console-messages {background:$base03;}
+// ??
+//.console-view-wrapper{background:$base03;}
+// ??
+//#console-view{background:$base03;}
+// ??
+//.CodeMirror-scroll{background:$base03;}
+// ??
+//.drawer .revision-history-drawer{background:$base03;}
+// ??
+//.dialog .fill {background:$base03;}
+// ??
+//.panel{background:$base03;}
+
+// console toolbar
+.console-status-bar{background:$base02;}
+
+//.help-window-main{background:$base03;}
+//.tabbed-pane-content{background:$base03;}
+//.tabbed-pane-content.has-no-tabs{background:$base03;}
+//.sidebar-overlay{background:$base03;}
+//.styles-section.read-only{background:$base03;}
+//.split-view-vertical .sidebar-pane.composite .properties-tree{background:$base03;}
+//.panel:not(.elements){background:$base03;}
+//.panel:not(.extension-panel){background:$base03;}
+//#network-views .CodeMirror-lines{background:$base03;}
+//#script-view-fallback{background:$base03;}
+//.panel-status-bar{background:$base03;}
+//.sidebar {background:$base03;}
+//body.inactive .sidebar {background:$base03;}
+
+
+
+
+.tabbed-pane-header {
+  flex-basis: 36px;
+  color: $white !important;
+  background: $base02 !important;
+  border-bottom: 1px solid $base01 !important;
+  .tabbed-pane-header-tab {
+    box-sizing: initial;
+    text-align: center;
+    padding: 9px 4px;
+    height: 28px;
+    margin: 0;
+    background: $base00 !important;
+    color: $base1;
+    border-right: 1px solid $base02;
+    &.selected {
+      background: $base0 !important;
+      color: $white;
+      -webkit-border-image: none;
+      border: none;
+      border-right: 1px solid $base02;
+      border-left: 1px solid transparent;
+    }
+  }
+}
+
+.tabbed-pane-content > .panel {
+  border-top: 5px solid $base03;
+}
+
+.overrides-view input[type=text], .overrides-view select,
+input, input[type="password"], input[type="text"],
+input[type="search"], isindex, .search-replace,
+.settings-tab input:not([type]), .settings-tab input[type="text"] {
+  padding: 5px 8px;
+  background-color: $base0;
+  border: 1px solid $base02;
+  color: $white;
+}
+
+.overrides-activate-device #tab-device,
+.overrides-activate-viewport #tab-viewport,
+.overrides-activate-user-agent #tab-user-agent,
+.overrides-activate-sensors #tab-sensors {
+  color: $blue-lightest;
+}
+
+.overrides-view .overrides-footer {
+  padding: 5px;
+  background: $base01;
+  border-top: 1px solid $base0;
+  color: $white;
+}
+
+button.overrides-swap {
+  background: $blue;
+  border: none;
+  margin: 5px 10px;
+  color: darken($blue, 50%);
+}
+
+.status-bar {
+  background: $base01;
+  border-top: 1px solid $base0;
+  color: $white;
+}
+
+.settings-tab-text-button {
+  margin: 0 5px;
+  background: $blue;
+  border: 0 !important;
+  border-radius: 2px;
+  box-shadow: none;
+  text-shadow: none;
+  color: $white;
+  &:not(:disabled):hover {
+    background: darken($blue, 20%);
+    box-shadow: none;
+    color: $white;
+  }
+}
+
+a {
+  color: $green !important;
+  &:hover {
+    color: darken($green, 20%) !important;
+  }
+}
+
+// GLYPHS
+
+button.status-bar-item .glyph.shadow, .glyph.shadow {
+  background-color: none;
+}
+
+.glyph {
+  top: 0;
+}
+
+/*-- GLYPHS -- */
+button.status-bar-item .glyph {
+  background-color: $base1;
+}
+
+.search-drawer-header label.search-config-label {
+  color: $base1;
+}
+
+button.scripts-step-over .glyph,
+button.scripts-step-into .glyph,
+button.scripts-step-out .glyph,
+.filters-toggle.toggled-active .glyph,
+button.status-bar-item.toggled-on .glyph,
+button.status-bar-item.toggled-on .glyph:not(.shadow),
+button.clear-status-bar-item:active .glyph,
+button.garbage-collect-status-bar-item:active .glyph,
+button.glue-async-status-bar-item:active .glyph,
+.filters-toggle.toggled-shown .glyph {
+  background-color: $blue;
+}
+
+button.status-bar-item.toggled-on .glyph:not(.shadow) {
+  background-color: $blue !important;
+}
+
+button.status-bar-item .glyph {
+  left: -3px;
+}
+
+.long-click-glyph {
+  color: $base1;
+}
+
+.section .properties {
+  .name {
+    color: $blue !important;
+    &.dimmed {
+      color: $blue-lightest;
+      opacity: 1;
+    }
+  }
+}
+
+.sidebar-tree-section {
+  text-shadow: none;
+}
+
+#scripts-debug-toolbar, .scripts-debug-toolbar, .sidebar-pane-title {
+  height: 30px;
+  flex: 0 0 30px;
+  padding: 5px;
+  flex: 0 0 30px;
+  background: $base00 !important;
+  border-top: 1px solid $base02;
+  border-bottom: 1px solid $base02;
+  color: $white;
+  .status-bar-item {
+    top: -3px;
+  }
+}
+.sidebar-pane {
+  padding: 5px 0;
+  .breakpoints-list-deactivated {
+    background: $base0;
+    opacity: 1;
+    li {
+      padding: 5px;
+      color: $base02;
+    }
+  }
+}
+.placard, .placard + .info {
+  background: $base00;
+  border: none;
+  .subtitle {
+    color: $base1 !important;
+  }
+  &.selected {
+    background: $blue;
+    border: none;
+    .subtitle {
+      color: $base02 !important;
+    }
+  }
+  .subtitle {
+    color: $base1;
+  }
+}
+
+.placard:nth-of-type(2n) {
+  background-color: $base01;
+}
+
+.sidebar-pane-toolbar {
+  .panel.elements & > select.select-settings {
+    -webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/paneSettingsButtons.png);
+    background: $white;
+    &:hover {
+      background: $blue;
+    }
+  }
+  .panel.elements & > select.select-filter {
+    -webkit-mask-image: url(Images/paneFilterButtons.png);
+    background: $white;
+    &:hover {
+      background: $blue;
+    }
+  }
+  & > .pane-title-button {
+    &.add {
+      -webkit-mask-image: url(Images/paneAddButtons.png);
+      background: $white;
+      background-image: none;
+      &:hover {
+        background: $blue;
+      }
+    }
+    &.pane-title-button.refresh {
+      -webkit-mask-image: url(Images/paneRefreshButtons.png);
+      background: $white;
+      background-image: none;
+      &:hover {
+        background: $blue;
+      }
+    }
+    &.element-state {
+      -webkit-mask-image: url(Images/paneElementStateButtons.png);
+      background: $white;
+      background-image: none;
+      &:hover {
+        background: $blue;
+      }
+    }
+  }
+}
+
+// Syntax Highlighting
+.cm-breakpoint .CodeMirror-linenumber {
+  margin-left: 0 !important;
+  background-color: $blue-light;
+  border: none !important;
+  color: $base03 !important;
+}
+
+.cm-breakpoint.cm-execution-line .CodeMirror-linenumber {
+  background-color: $blue;
+  color: $white !important;
+}
+
+.CodeMirror {
+  .CodeMirror-selected {
+    background-color: $base02;
+  }
+
+  pre {
+    line-height: 14px;
+  }
+  .CodeMirror-linenumber {
+    padding-left: 0;
+    color: $base0;
+  }
+  .CodeMirror-sizer {
+    margin-left: 40px;
+  }
+  .CodeMirror-gutters {
+    border-right: none;
+  }
+  .CodeMirror-gutter {
+    background-color: $base01;
+  }
+  div.CodeMirror-cursor {
+    border-left: 1px solid $white;
+    z-index: 3;
+  }
+  // Source Syntax Highlighting
+  // HTML/XML
+  .cm-xml-tag {
+    color: $magenta;
+  }
+  .cm-xml-attribute {
+    color: $yellow;
+  }
+  .cm-xml-string {
+    color: $blue-lightest;
+  }
+  .cm-xml-comment {
+    color: $base1;
+  }
+  .cm-punctation {
+    color: $orange;
+  }
+  // Javascript & Coffeescript
+  .cm-error {
+    color: $red;
+  }
+  .cm-js-keyword,  .cm-keyword {
+    color: $yellow;
+  }
+  .cm-js-def, .cm-variable {
+    color: $orange;
+  }
+  .cm-js-string, .cm-string {
+    color: $blue-lightest;
+  }
+  .cm-js-number, .cm-number {
+    color: $magenta;
+  }
+  .cm-js-string-2 {
+    color: $orange;
+  }
+  .cm-js-comment, .cm-comment {
+    color: $base1;
+  }
+  .cm-search-highlight {
+    color: $orange;
+  }
+  .cm-css-qualifier, .cm-operator {
+    color: $blue;
+  }
+  .cm-css-tag {
+    color: $blue-light;
+  }
+  .cm-css-operator {
+    color: $yellow;
+  }
+  .cm-css-property {
+    color: $blue-light;
+  }
+  .cm-css-string, .cm-css-string-2 {
+    color: $orange;
+  }
+  .cm-css-number {
+    color: $magenta;
+  }
+  .cm-css-variable-2 {
+    font-style: italic;
+    color: $green;
+  }
+  .cm-css-atom, .cm-css-keyword, .cm-atom {
+    color: $magenta;
+  }
+  .cm-css-meta {
+    color: $red;
+  }
+  //Editing
+  .CodeMirror-matchingbracket {
+    background-color: $base02;
+    text-decoration: none;
+    color: $blue !important;
+  }
+  .CodeMirror-nonmatchingbracket {
+    color: $red !important;
+  }
+}
+
+.dialog {
+  background-image: none;
+  background-color: $base02;
+  border-radius: 5px;
+  border: 5px solid $base00;
+  box-shadow: $base03 0 1px 8px;
+  input.monospace {
+    height: 44px;
+    padding: 10px;
+    background-color: $base01;
+    font-size: 24px !important;
+    line-height: 24px;
+    outline: none;
+  }
+  .filtered-item-list-dialog {
+    > div.container {
+      background: $base02;
+      border: none;
+      top: 64px;
+    }
+    .filtered-item-list-dialog-item {
+      background-color: $base02;
+      padding: 8px 10px;
+      border-bottom: 1px solid $base01;
+      color: $base0;
+      &.selected {
+        background-color: $blue-dark;
+        color: $white;
+        span.highlight {
+          color: $base02;
+        }
+      }
+      span.highlight {
+        color: $blue;
+      }
+    }
+  }
+}
+
+// Popover helper in popoverHelper.html for quicker styling, since it's really hard to get it to stay during development
+
+.CodeMirror .CodeMirror-persist-highlight {
+  background-color: $blue;
+  border: $blue-dark 1px solid;
+  color: $base03;
+}
+
+.popover {
+  -webkit-border-image: none;
+  background-color: none;
+  box-shadow: 1px 1px 10px $base02;
+  margin: 25px;
+  border: 25px transparent;
+
+  &.bottom-left-arrow {
+    margin-top: -25px;
+    .arrow {
+      -webkit-mask-position: 0 -19px;
+      bottom: 6px;
+    }
+  }
+
+  &.top-left-arrow .arrow { top: 6px; }
+
+  .arrow {
+    background-color: $base00;
+    background-image: none;
+    -webkit-mask-image: url(Images/popoverArrows.png);
+  }
+
+  .content {
+    background-color: $base02 !important;
+    border: 5px solid $base00;
+    border-radius: 5px;
+  }
+
+  .inline-block {
+    width: 100%;
+  }
+
+  .source-frame-popover-title, .function-popover-title {
+    color: $base1;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .function-popover-title {
+    border-bottom: 1px solid $base01;
+  }
+
+  .console-formatted-undefined {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .source-frame-popover-tree {
+    top: 28px;
+    border-top: 1px solid $base02;
+    .separator {
+      color: $white;
+    }
+  }
+
+  table {
+    width: 100%;
+    color: $white;
+
+    tr {
+      line-height: 1.5em;
+    }
+
+    td.timeline-details.timeline-details-row-title {
+      color: $blue-light;
+    }
+
+    td.timeline-details-title {
+      padding: .5em;
+      border-bottom: 1px solid $base00;
+    }
+  }
+}
+
+.prefix {
+  font-weight: bold;
+  color:#fff;
+}
+
+.suggest-box {
+  margin-top: 5px;
+  margin-bottom: -5px;
+  background: $base02 !important;
+  color:$base1 !important;
+  border: none !important;
+  box-shadow: 1px 1px 10px $base02 !important;
+  &.above-anchor {
+    margin-top: -5px;
+    border-bottom: none;
+    border-top: 5px solid $base01;
+  }
+
+  .container {
+    border-radius: 3px;
+  }
+
+  .container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .suggest-box-content-item {
+    padding: 2px;
+    &.selected {
+      background-color: $blue !important;
+      color: $base03;
+    }
+
+    &:hover:not(.selected) {
+      background-color: $base02 !important;
+      border: 1px solid transparent !important;
+    }
+  }
+}
+
+fieldset[disabled] {
+  color: $base0;
+  input {
+    background-color: $base0 !important;
+    color: $base02 !important;
+  }
+}
+

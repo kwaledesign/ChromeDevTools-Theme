@@ -1,0 +1,123 @@
+//~~~~ CONSOLE ~~~~//
+@import "variables";
+// Select Menus in Console
+select.status-bar-item {
+  color: $blue-lightest;
+  text-shadow: none;
+  &:empty, &:empty + .status-bar-select-arrow {
+    display: none;
+  }
+}
+
+.console-filters-header {
+  flex-basis: 36px;
+  padding: 5px;
+  background-color: $base02;
+  border-top: 1px solid $base0;
+  .filter-bitset-filter li.selected {
+    background: $blue;
+    border-radius: 0;
+    color: $base02;
+  }
+}
+
+.search-drawer-header input[type="text"].search-config-search {
+  color: $white;
+}
+
+#console-messages {
+  border-top: 1px solid $base02;
+  .console-message::before, .console-user-command::before,
+  #console-prompt::before, .console-group-title::before,
+  .console-error-level::before {
+    top: 1.1em;
+  }
+  .console-group-messages .section > .header .title {
+    color: $white;
+  }
+  .section .properties .name, .event-properties .name, .console-formatted-object .name {
+    color: $blue-light !important;
+    &.dimmed {
+      color: $blue-lightest;
+    }
+  }
+  .console-formatted-object {
+    color: $orange;
+  }
+  a {
+    color: $green;
+    &:hover {
+      color: darken($green, 20%);
+    }
+  }
+  .console-error-level .console-message-text,
+  .console-error-level .section > .header .title {
+    color: $red !important;
+  }
+  .console-message, .console-user-command, #console-prompt {
+    padding: 5px 0;
+    color: $blue-lightest;
+    border-bottom: 1px solid $base00;
+  }
+  .console-debug-level .console-message-text {
+    color: $blue;
+  }
+}
+
+.search-status-bar-summary {
+  border-top: 1px solid $base0;
+  background: red; //$base02;
+}
+
+#drawer-contents .tabbed-pane-header .tabbed-pane-header-tab {
+  height: 18px;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid $base02;
+}
+
+#search-results-pane-file-based {
+  .search-match {
+    .search-match-content {
+      color: $white;
+    }
+    .highlighted-match {
+      background: $blue-light;
+      padding: 0 3px;
+      color: $base02;
+    }
+    &:not(:hover) .search-match-line-number {
+      background: $base02;
+      color: $white;
+    }
+    &:hover .search-match-line-number {
+      background: $blue;
+      color: $white;
+    }
+  }
+  .search-result {
+    padding: 5px 0;
+    background: $base02;
+    border: 1px solid $base0;
+    border-right: none;
+    border-left: none;
+    color: $white;
+    &:hover {
+      color: $blue;
+      background: $base01;
+    }
+    .search-result-file-name, .search-result-matches-count {
+      color: $white;
+    }
+  }
+}
+
+.highlight {
+  color: $yellow;
+}
+
+.object-info-state-note {
+  background-color: $blue;
+  color: $base02;
+}
+
+body.platform-windows option { background: #292929; color: $blue-lightest; }

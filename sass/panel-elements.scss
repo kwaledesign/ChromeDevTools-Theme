@@ -1,0 +1,203 @@
+@import "variables";
+
+//~~~~ INSPECTOR MAIN ~~~~//
+.elements-tree-outline { background: $base03; }
+ol.elements-tree-outline .selected {
+  // bg color for selected elements in DOM tree
+  background: $base02;
+  .selection {
+    background: $base02 !important;
+  }
+}
+
+.webkit-html-tag-name,
+.styles-section .simple-selector.selector-matches, .styles-section .selector {
+  color: $green;
+}
+
+.webkit-html-tag {
+  color: $cyan;
+}
+
+.webkit-html-tag-name {
+  color: $green;
+}
+
+.webkit-html-attribute-name {
+  color: $yellow;
+}
+
+.webkit-html-attribute-value {
+  color: $base01; //$blue-light;
+}
+
+span.webkit-html-text-node.bogus {
+  color: $blue;
+}
+
+.webkit-html-pseudo-element {
+  color: $red;
+}
+
+.webkit-html-comment {
+  color: $base01;
+}
+
+.webkit-css-property {
+  color: $yellow;
+}
+
+.metrics-and-styles .properties .value {
+  color: $orange;
+}
+
+.inspector-footer.status-bar {
+  padding: 5px;
+  background-color: $base02;
+  border-top: 1px solid $base0;
+  .toolbar-search-control {
+    background-color: $base0;
+    border: none;
+  }
+  .toolbar-search button {
+    padding: 3px;
+    background: $base0;
+    color: $white;
+    border-radius: 0;
+    border: none;
+    font-size: 10px;
+  }
+}
+
+.split-view { background: $base03; }
+.split-view.hbox > .split-view-resizer {
+  width: 3px;
+  // vertical divider line between pannels
+  background: $base1;   //$base02;
+}
+
+//~~~~ INSPECTOR SIDEBAR ~~~~//
+.sidebar-separator {
+  padding: 5px;
+  background: $base03;
+  border-bottom: 1px solid $base02;
+  color: $white;
+}
+
+.styles-section {
+  padding: 5px;
+  border-bottom: 1px solid $base1; //$base02;
+  &.user-rule.read-only {
+    background-color: $base1;
+    .header .subtitle {
+      color: $blue-lightest;
+    }
+  }
+}
+
+.tabbed-pane-header-tabs-drop-down {
+  color: $blue;
+}
+
+.styles-element-state-pane {
+  padding: 10px;
+  background: $base01;
+  border-bottom: 1px solid $base0 !important;
+}
+
+.sidebar-tabbed-pane {
+  .tabbed-pane-header {
+    flex-basis: 24px;
+    font-size: 10px;
+    .tabbed-pane-header-tab {
+      padding: 4px 1px;
+    }
+  }
+}
+
+.events-pane {
+  .section {
+    padding: 5px;
+    &:not(:nth-of-type(1)) {
+      border-top: 1px solid $base02;
+    }
+  }
+  .name {
+    color: $white;
+  }
+}
+
+.console-formatted-function {
+  color: $yellow;
+}
+
+.console-formatted-string {
+  color: $blue-lightest;
+}
+
+.console-formatted-boolean {
+  color: $green;
+}
+
+.console-formatted-number {
+  font-weight: bold;
+  color: $green;
+}
+
+.console-formatted-array {
+  color: $blue;
+}
+
+.console-formatted-object {
+  color: $orange;
+}
+
+//~~~~ BREADCRUMBS ~~~~//
+//element breadcrumb toolbar
+#elements-crumbs {
+  flex-basis: 24px;
+  background: $base01;
+  color: $base1;
+  border-top: 1px solid $base02;
+  border-bottom: 1px solid $base02;
+  .crumbs .crumb {
+    height: 24px;
+    padding-top: 2px;
+    border-right: 1px solid $base02;
+    &:hover {
+      background: $base00;
+      color: $white;
+    }
+    &.selected.start {
+      background: $base02;
+    }
+  }
+}
+
+//~~~~ ELEMENTS ~~~~//
+//box model pannel
+.panel.elements {
+  .metrics {
+    color: $base02;
+    .position:hover {
+      color: $white;
+    }
+  }
+}
+
+.event-bars .event-bar .header {
+  &::before {
+    opacity: 1;
+    -webkit-mask-position: -4px -96px;
+    background: none;
+    background-color: $base1;
+    -webkit-mask-image: url(Images/statusbarButtonGlyphs.png);
+  }
+  .title {
+    text-shadow: none;
+  }
+}
+
+div.split-view-contents.scroll-target.split-view-contents-first.split-view-main.vbox {
+  overflow: hidden;
+}

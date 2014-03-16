@@ -1,0 +1,89 @@
+//~~~~ SOURCES ~~~~//
+
+@import "variables";
+
+.panel.sources {
+  .sidebar-overlay {
+    box-shadow: none;
+  }
+  // Right sidebar
+  .split-view-contents-first {
+    .tabbed-pane-header {
+      flex-basis: 24px;
+      .tabbed-pane-header-tab {
+        position: relative;
+        padding: 4px;
+        font-size: 10px;
+        .tabbed-pane-header-tab-title {
+          // Offset for close button
+          margin-right: 15px;
+          // position: absolute;
+          // left: 12px;
+        }
+        .close-button-gray {
+          position: absolute;
+          background-color: $base1;
+          top: 8px;
+          left: inherit;
+          right: 5px;
+          &:hover {
+            background-color: $white;
+            background-position: -175px -96px;
+          }
+        }
+      }
+    }
+    .navigator li {
+      height: 20px;
+      font-size: 10px;
+      color: $base1;
+      &.selected {
+        padding-top: 2px;
+        background: $blue;
+        color: $white;
+      }
+    }
+  }
+
+  // sources pannel footer toolbar
+  #sources-panel-sources-view .sources-status-bar {
+    flex-basis: 30px;
+    padding: 5px;
+    background: $base01;
+    border-top: 1px solid $base0;
+    color: $white;
+  }
+  .sidebar-pane-stack#scripts-debug-sidebar-contents, #scripts-sidebar-stack-pane {
+    top: 29px;
+  }
+
+  .watch-expressions {
+    li {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      &.dimmed:hover {
+        background: $base0;
+        span {
+          color: $white !important;
+        }
+      }
+      &.parent:hover {
+        background: $base02;
+      }
+    }
+  }
+}
+
+.cm-execution-line {
+  background-color: $base02 !important;
+  outline: none !important;
+}
+
+.cm-highlight {
+  -webkit-animation: none;
+  background: $base0;
+}
+
+.sidebar-pane .breakpoint-hit {
+  background: $blue-dark;
+}

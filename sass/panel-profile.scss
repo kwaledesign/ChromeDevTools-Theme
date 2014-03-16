@@ -1,0 +1,86 @@
+//~~~~ PROFILE ~~~~//
+
+@import "variables";
+.panel.profiles {
+  .panel-enabler-view, .profiles-sidebar-tree-box {
+    background: $base01;
+    color: $white;
+  }
+  .panel-enabler-view button:not(.status-bar-item) {
+    background: $blue;
+    border: none;
+    border-radius: 3px;
+    color: $white;
+    body.inactive & {
+      background: $base1;
+      color: $base00;
+    }
+  }
+}
+
+.data-grid {
+  table.data {
+    background: none;
+  }
+  .data-container {
+    top: 25px;
+  }
+  th {
+    padding: 5px;
+    background: $base01 !important;
+    border-bottom-color: $blue !important;
+  }
+  td {
+    padding: 5px;
+    color: $base1;
+    a {
+      color: $blue-light;
+    }
+  }
+  tr, td {
+    color: $white;
+    text-decoration: none !important;
+  }
+  tr:nth-child(odd) {
+    background: $base1;
+  }
+  tr:nth-child(even) {
+    background: $base01;
+  }
+  tr:hover:not(:last-child) {
+    background: $blue;
+    text-decoration: none;
+    td {
+      color: $white;
+      a {
+        color: $blue-lightest;
+      }
+    }
+    .network-cell-subtitle {
+      color: $white;
+    }
+  }
+}
+
+.network-cell-subtitle:hover {
+  color: $base1;
+  .data-grid-resizer {
+    width: 1px;
+    background: $base0;
+  }
+}
+
+.resources-dividers-label-bar, .overview-grid-dividers-background {
+  background: rgba($base0,.4);
+}
+
+.overview-grid-window-resizer {
+  background: $base1;
+  box-shadow: $base01 1px 0 0, $base01 -1px 0 0, $base01 0 1px 0, $base01 0 -1px 0;
+}
+
+.info-table {
+  padding: 1em;
+  background: $base1;
+  border: 2px solid $base00;
+}

@@ -1,0 +1,80 @@
+@import "variables";
+//~~~~ TOOLBAR ~~~~//
+body#-blink-dev-tools .toolbar-background {
+  background: $base02 !important;
+  border: none;
+}
+
+.toolbar {
+  flex: 0 0 28px;
+  background: $base02 !important;
+
+  .toolbar-controls-left {
+    opacity: 1;
+    padding-top: 0;
+    background: $base02;
+
+    .node-search-status-bar-item .glyph {
+      -webkit-mask-position: -225px -24px;
+    }
+    button.status-bar-item {
+      width: 30px !important;
+      border-right: 3px solid lighten($base02, 20%);
+      &.toggled-on {
+        background: $blue !important;
+        border-right: 3px solid darken($blue, 20%);
+        .glyph {
+          background-color: $white !important;
+          opacity: 100%;
+        }
+      }
+    }
+  }
+
+  .tabbed-pane-header {
+    position: relative;
+    overflow: inherit;
+    border-bottom: none !important;
+    .tabbed-pane-header-tab {
+      padding: 5px 0;
+      &:hover {
+        background-color: $base01 !important;
+      }
+      &, &.selected {
+        border-right: none;
+        border-left: none;
+      }
+      &.selected {
+        // main tool bar active tab color
+        background-color: $base03 !important;
+      }
+    }
+    .tabbed-pane-header-tabs-drop-down {
+      top: 2px;
+    }
+  }
+
+  .toolbar-controls-right {
+    background: $base02;
+    #error-warning-count {
+      padding: 5px 9px;
+      color: $white;
+    }
+  }
+
+  button.status-bar-item {
+    margin: 0;
+    width: 26px;
+    height: 30px;
+    .glyph {
+      background-color: $base0 !important;
+    }
+    .toolbar-controls-right & {
+      margin: 3px;
+      margin-left: 0;
+    }
+  }
+  .toolbar-controls-right #error-warning-count:hover {
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,93 @@
+/**
+ * Variables
+ *
+ */
+/* line 6, ../sass/panel-sources.scss */
+.panel.sources .sidebar-overlay {
+  box-shadow: none;
+}
+/* line 11, ../sass/panel-sources.scss */
+.panel.sources .split-view-contents-first .tabbed-pane-header {
+  flex-basis: 24px;
+}
+/* line 13, ../sass/panel-sources.scss */
+.panel.sources .split-view-contents-first .tabbed-pane-header .tabbed-pane-header-tab {
+  position: relative;
+  padding: 4px;
+  font-size: 10px;
+}
+/* line 17, ../sass/panel-sources.scss */
+.panel.sources .split-view-contents-first .tabbed-pane-header .tabbed-pane-header-tab .tabbed-pane-header-tab-title {
+  margin-right: 15px;
+}
+/* line 23, ../sass/panel-sources.scss */
+.panel.sources .split-view-contents-first .tabbed-pane-header .tabbed-pane-header-tab .close-button-gray {
+  position: absolute;
+  background-color: #93a1a1;
+  top: 8px;
+  left: inherit;
+  right: 5px;
+}
+/* line 29, ../sass/panel-sources.scss */
+.panel.sources .split-view-contents-first .tabbed-pane-header .tabbed-pane-header-tab .close-button-gray:hover {
+  background-color: #f4f4f4;
+  background-position: -175px -96px;
+}
+/* line 36, ../sass/panel-sources.scss */
+.panel.sources .split-view-contents-first .navigator li {
+  height: 20px;
+  font-size: 10px;
+  color: #93a1a1;
+}
+/* line 40, ../sass/panel-sources.scss */
+.panel.sources .split-view-contents-first .navigator li.selected {
+  padding-top: 2px;
+  background: #268bd2;
+  color: #f4f4f4;
+}
+/* line 49, ../sass/panel-sources.scss */
+.panel.sources #sources-panel-sources-view .sources-status-bar {
+  flex-basis: 30px;
+  padding: 5px;
+  background: #586e75;
+  border-top: 1px solid #839496;
+  color: #f4f4f4;
+}
+/* line 56, ../sass/panel-sources.scss */
+.panel.sources .sidebar-pane-stack#scripts-debug-sidebar-contents, .panel.sources #scripts-sidebar-stack-pane {
+  top: 29px;
+}
+/* line 61, ../sass/panel-sources.scss */
+.panel.sources .watch-expressions li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* line 64, ../sass/panel-sources.scss */
+.panel.sources .watch-expressions li.dimmed:hover {
+  background: #839496;
+}
+/* line 66, ../sass/panel-sources.scss */
+.panel.sources .watch-expressions li.dimmed:hover span {
+  color: #f4f4f4 !important;
+}
+/* line 70, ../sass/panel-sources.scss */
+.panel.sources .watch-expressions li.parent:hover {
+  background: #073642;
+}
+
+/* line 77, ../sass/panel-sources.scss */
+.cm-execution-line {
+  background-color: #073642 !important;
+  outline: none !important;
+}
+
+/* line 82, ../sass/panel-sources.scss */
+.cm-highlight {
+  -webkit-animation: none;
+  background: #839496;
+}
+
+/* line 87, ../sass/panel-sources.scss */
+.sidebar-pane .breakpoint-hit {
+  background: #1764a0;
+}

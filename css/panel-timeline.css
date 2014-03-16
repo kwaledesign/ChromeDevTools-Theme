@@ -1,0 +1,68 @@
+/**
+ * Variables
+ *
+ */
+/* line 5, ../sass/panel-timeline.scss */
+.panel.timeline .timeline-records-title, .panel.timeline .timeline-records-list {
+  background: #586e75;
+  color: #f4f4f4;
+}
+/* line 9, ../sass/panel-timeline.scss */
+.panel.timeline .resources-dividers-label-bar {
+  padding: 5px;
+  background: #839496;
+  color: #f4f4f4;
+}
+/* line 14, ../sass/panel-timeline.scss */
+.panel.timeline .timeline-details-view-title {
+  flex-basis: 30px;
+  padding: 5px;
+  background: #586e75;
+  border-top: 1px solid #839496;
+  color: #f4f4f4;
+}
+/* line 21, ../sass/panel-timeline.scss */
+.panel.timeline #timeline-overview-sidebar .sidebar-tree-item.selected {
+  background: #268bd2;
+  border-left: 6px solid #a3def2;
+  color: #f4f4f4;
+}
+/* line 25, ../sass/panel-timeline.scss */
+.panel.timeline #timeline-overview-sidebar .sidebar-tree-item.selected .icon {
+  background-color: #f4f4f4;
+}
+/* line 29, ../sass/panel-timeline.scss */
+.panel.timeline #timeline-overview-frames canvas {
+  background: #586e75;
+}
+/* line 32, ../sass/panel-timeline.scss */
+.panel.timeline #memory-graphs-container .split-view-contents-first {
+  background: #586e75;
+}
+/* line 34, ../sass/panel-timeline.scss */
+.panel.timeline #memory-graphs-container .split-view-contents-first .sidebar-tree.sidebar-tree-section {
+  text-shadow: none;
+  color: #93a1a1;
+}
+/* line 39, ../sass/panel-timeline.scss */
+.panel.timeline .timeline-aggregated-info-legend, .panel.timeline .timeline-details-view-block {
+  color: #f4f4f4;
+}
+/* line 42, ../sass/panel-timeline.scss */
+.panel.timeline .timeline-tree-item .data.dimmed, .panel.timeline .timeline-details-view-row-title {
+  color: #93a1a1;
+}
+/* line 45, ../sass/panel-timeline.scss */
+.panel.timeline .overview-grid-window-rulers {
+  background: #f4f4f4;
+}
+
+/* line 50, ../sass/panel-timeline.scss */
+.overview-grid-window {
+  background: #268bd2;
+}
+
+/* line 54, ../sass/panel-timeline.scss */
+#timeline-overview-sidebar .icon {
+  background: #93a1a1;
+}

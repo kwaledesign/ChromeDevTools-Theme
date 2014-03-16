@@ -1,0 +1,1684 @@
+/**
+ * Variables
+ *
+ */
+/**
+ * Variables
+ *
+ */
+/* line 3, ../sass/toolbars.scss */
+body#-blink-dev-tools .toolbar-background {
+  background: #073642 !important;
+  border: none;
+}
+
+/* line 8, ../sass/toolbars.scss */
+.toolbar {
+  flex: 0 0 28px;
+  background: #073642 !important;
+}
+/* line 12, ../sass/toolbars.scss */
+.toolbar .toolbar-controls-left {
+  opacity: 1;
+  padding-top: 0;
+  background: #073642;
+}
+/* line 17, ../sass/toolbars.scss */
+.toolbar .toolbar-controls-left .node-search-status-bar-item .glyph {
+  -webkit-mask-position: -225px -24px;
+}
+/* line 20, ../sass/toolbars.scss */
+.toolbar .toolbar-controls-left button.status-bar-item {
+  width: 30px !important;
+  border-right: 3px solid #11819e;
+}
+/* line 23, ../sass/toolbars.scss */
+.toolbar .toolbar-controls-left button.status-bar-item.toggled-on {
+  background: #268bd2 !important;
+  border-right: 3px solid #16527c;
+}
+/* line 26, ../sass/toolbars.scss */
+.toolbar .toolbar-controls-left button.status-bar-item.toggled-on .glyph {
+  background-color: #f4f4f4 !important;
+  opacity: 100%;
+}
+/* line 34, ../sass/toolbars.scss */
+.toolbar .tabbed-pane-header {
+  position: relative;
+  overflow: inherit;
+  border-bottom: none !important;
+}
+/* line 38, ../sass/toolbars.scss */
+.toolbar .tabbed-pane-header .tabbed-pane-header-tab {
+  padding: 5px 0;
+}
+/* line 40, ../sass/toolbars.scss */
+.toolbar .tabbed-pane-header .tabbed-pane-header-tab:hover {
+  background-color: #586e75 !important;
+}
+/* line 43, ../sass/toolbars.scss */
+.toolbar .tabbed-pane-header .tabbed-pane-header-tab, .toolbar .tabbed-pane-header .tabbed-pane-header-tab.selected {
+  border-right: none;
+  border-left: none;
+}
+/* line 47, ../sass/toolbars.scss */
+.toolbar .tabbed-pane-header .tabbed-pane-header-tab.selected {
+  background-color: #002b36 !important;
+}
+/* line 52, ../sass/toolbars.scss */
+.toolbar .tabbed-pane-header .tabbed-pane-header-tabs-drop-down {
+  top: 2px;
+}
+/* line 57, ../sass/toolbars.scss */
+.toolbar .toolbar-controls-right {
+  background: #073642;
+}
+/* line 59, ../sass/toolbars.scss */
+.toolbar .toolbar-controls-right #error-warning-count {
+  padding: 5px 9px;
+  color: #f4f4f4;
+}
+/* line 65, ../sass/toolbars.scss */
+.toolbar button.status-bar-item {
+  margin: 0;
+  width: 26px;
+  height: 30px;
+}
+/* line 69, ../sass/toolbars.scss */
+.toolbar button.status-bar-item .glyph {
+  background-color: #839496 !important;
+}
+/* line 72, ../sass/toolbars.scss */
+.toolbar-controls-right .toolbar button.status-bar-item {
+  margin: 3px;
+  margin-left: 0;
+}
+/* line 77, ../sass/toolbars.scss */
+.toolbar .toolbar-controls-right #error-warning-count:hover {
+  border-bottom: none;
+}
+
+/**
+ * Variables
+ *
+ */
+/* line 4, ../sass/panel-elements.scss */
+.elements-tree-outline {
+  background: #002b36;
+}
+
+/* line 5, ../sass/panel-elements.scss */
+ol.elements-tree-outline .selected {
+  background: #073642;
+}
+/* line 8, ../sass/panel-elements.scss */
+ol.elements-tree-outline .selected .selection {
+  background: #073642 !important;
+}
+
+/* line 13, ../sass/panel-elements.scss */
+.webkit-html-tag-name,
+.styles-section .simple-selector.selector-matches, .styles-section .selector {
+  color: #859900;
+}
+
+/* line 18, ../sass/panel-elements.scss */
+.webkit-html-tag {
+  color: #2aa198;
+}
+
+/* line 22, ../sass/panel-elements.scss */
+.webkit-html-tag-name {
+  color: #859900;
+}
+
+/* line 26, ../sass/panel-elements.scss */
+.webkit-html-attribute-name {
+  color: #b58900;
+}
+
+/* line 30, ../sass/panel-elements.scss */
+.webkit-html-attribute-value {
+  color: #586e75;
+}
+
+/* line 34, ../sass/panel-elements.scss */
+span.webkit-html-text-node.bogus {
+  color: #268bd2;
+}
+
+/* line 38, ../sass/panel-elements.scss */
+.webkit-html-pseudo-element {
+  color: #dc322f;
+}
+
+/* line 42, ../sass/panel-elements.scss */
+.webkit-html-comment {
+  color: #586e75;
+}
+
+/* line 46, ../sass/panel-elements.scss */
+.webkit-css-property {
+  color: #b58900;
+}
+
+/* line 50, ../sass/panel-elements.scss */
+.metrics-and-styles .properties .value {
+  color: #cb4b16;
+}
+
+/* line 54, ../sass/panel-elements.scss */
+.inspector-footer.status-bar {
+  padding: 5px;
+  background-color: #073642;
+  border-top: 1px solid #839496;
+}
+/* line 58, ../sass/panel-elements.scss */
+.inspector-footer.status-bar .toolbar-search-control {
+  background-color: #839496;
+  border: none;
+}
+/* line 62, ../sass/panel-elements.scss */
+.inspector-footer.status-bar .toolbar-search button {
+  padding: 3px;
+  background: #839496;
+  color: #f4f4f4;
+  border-radius: 0;
+  border: none;
+  font-size: 10px;
+}
+
+/* line 72, ../sass/panel-elements.scss */
+.split-view {
+  background: #002b36;
+}
+
+/* line 73, ../sass/panel-elements.scss */
+.split-view.hbox > .split-view-resizer {
+  width: 3px;
+  background: #93a1a1;
+}
+
+/* line 80, ../sass/panel-elements.scss */
+.sidebar-separator {
+  padding: 5px;
+  background: #002b36;
+  border-bottom: 1px solid #073642;
+  color: #f4f4f4;
+}
+
+/* line 87, ../sass/panel-elements.scss */
+.styles-section {
+  padding: 5px;
+  border-bottom: 1px solid #93a1a1;
+}
+/* line 90, ../sass/panel-elements.scss */
+.styles-section.user-rule.read-only {
+  background-color: #93a1a1;
+}
+/* line 92, ../sass/panel-elements.scss */
+.styles-section.user-rule.read-only .header .subtitle {
+  color: #a3def2;
+}
+
+/* line 98, ../sass/panel-elements.scss */
+.tabbed-pane-header-tabs-drop-down {
+  color: #268bd2;
+}
+
+/* line 102, ../sass/panel-elements.scss */
+.styles-element-state-pane {
+  padding: 10px;
+  background: #586e75;
+  border-bottom: 1px solid #839496 !important;
+}
+
+/* line 109, ../sass/panel-elements.scss */
+.sidebar-tabbed-pane .tabbed-pane-header {
+  flex-basis: 24px;
+  font-size: 10px;
+}
+/* line 112, ../sass/panel-elements.scss */
+.sidebar-tabbed-pane .tabbed-pane-header .tabbed-pane-header-tab {
+  padding: 4px 1px;
+}
+
+/* line 119, ../sass/panel-elements.scss */
+.events-pane .section {
+  padding: 5px;
+}
+/* line 121, ../sass/panel-elements.scss */
+.events-pane .section:not(:nth-of-type(1)) {
+  border-top: 1px solid #073642;
+}
+/* line 125, ../sass/panel-elements.scss */
+.events-pane .name {
+  color: #f4f4f4;
+}
+
+/* line 130, ../sass/panel-elements.scss */
+.console-formatted-function {
+  color: #b58900;
+}
+
+/* line 134, ../sass/panel-elements.scss */
+.console-formatted-string {
+  color: #a3def2;
+}
+
+/* line 138, ../sass/panel-elements.scss */
+.console-formatted-boolean {
+  color: #859900;
+}
+
+/* line 142, ../sass/panel-elements.scss */
+.console-formatted-number {
+  font-weight: bold;
+  color: #859900;
+}
+
+/* line 147, ../sass/panel-elements.scss */
+.console-formatted-array {
+  color: #268bd2;
+}
+
+/* line 151, ../sass/panel-elements.scss */
+.console-formatted-object {
+  color: #cb4b16;
+}
+
+/* line 157, ../sass/panel-elements.scss */
+#elements-crumbs {
+  flex-basis: 24px;
+  background: #586e75;
+  color: #93a1a1;
+  border-top: 1px solid #073642;
+  border-bottom: 1px solid #073642;
+}
+/* line 163, ../sass/panel-elements.scss */
+#elements-crumbs .crumbs .crumb {
+  height: 24px;
+  padding-top: 2px;
+  border-right: 1px solid #073642;
+}
+/* line 167, ../sass/panel-elements.scss */
+#elements-crumbs .crumbs .crumb:hover {
+  background: #657b83;
+  color: #f4f4f4;
+}
+/* line 171, ../sass/panel-elements.scss */
+#elements-crumbs .crumbs .crumb.selected.start {
+  background: #073642;
+}
+
+/* line 180, ../sass/panel-elements.scss */
+.panel.elements .metrics {
+  color: #073642;
+}
+/* line 182, ../sass/panel-elements.scss */
+.panel.elements .metrics .position:hover {
+  color: #f4f4f4;
+}
+
+/* line 189, ../sass/panel-elements.scss */
+.event-bars .event-bar .header::before {
+  opacity: 1;
+  -webkit-mask-position: -4px -96px;
+  background: none;
+  background-color: #93a1a1;
+  -webkit-mask-image: url(Images/statusbarButtonGlyphs.png);
+}
+/* line 196, ../sass/panel-elements.scss */
+.event-bars .event-bar .header .title {
+  text-shadow: none;
+}
+
+/* line 201, ../sass/panel-elements.scss */
+div.split-view-contents.scroll-target.split-view-contents-first.split-view-main.vbox {
+  overflow: hidden;
+}
+
+/**
+ * Variables
+ *
+ */
+/* line 4, ../sass/console.scss */
+select.status-bar-item {
+  color: #a3def2;
+  text-shadow: none;
+}
+/* line 7, ../sass/console.scss */
+select.status-bar-item:empty, select.status-bar-item:empty + .status-bar-select-arrow {
+  display: none;
+}
+
+/* line 12, ../sass/console.scss */
+.console-filters-header {
+  flex-basis: 36px;
+  padding: 5px;
+  background-color: #073642;
+  border-top: 1px solid #839496;
+}
+/* line 17, ../sass/console.scss */
+.console-filters-header .filter-bitset-filter li.selected {
+  background: #268bd2;
+  border-radius: 0;
+  color: #073642;
+}
+
+/* line 24, ../sass/console.scss */
+.search-drawer-header input[type="text"].search-config-search {
+  color: #f4f4f4;
+}
+
+/* line 28, ../sass/console.scss */
+#console-messages {
+  border-top: 1px solid #073642;
+}
+/* line 30, ../sass/console.scss */
+#console-messages .console-message::before, #console-messages .console-user-command::before,
+#console-messages #console-prompt::before, #console-messages .console-group-title::before,
+#console-messages .console-error-level::before {
+  top: 1.1em;
+}
+/* line 35, ../sass/console.scss */
+#console-messages .console-group-messages .section > .header .title {
+  color: #f4f4f4;
+}
+/* line 38, ../sass/console.scss */
+#console-messages .section .properties .name, #console-messages .event-properties .name, #console-messages .console-formatted-object .name {
+  color: #73aabd !important;
+}
+/* line 40, ../sass/console.scss */
+#console-messages .section .properties .name.dimmed, #console-messages .event-properties .name.dimmed, #console-messages .console-formatted-object .name.dimmed {
+  color: #a3def2;
+}
+/* line 44, ../sass/console.scss */
+#console-messages .console-formatted-object {
+  color: #cb4b16;
+}
+/* line 47, ../sass/console.scss */
+#console-messages a {
+  color: #859900;
+}
+/* line 49, ../sass/console.scss */
+#console-messages a:hover {
+  color: #2c3300;
+}
+/* line 53, ../sass/console.scss */
+#console-messages .console-error-level .console-message-text,
+#console-messages .console-error-level .section > .header .title {
+  color: #dc322f !important;
+}
+/* line 57, ../sass/console.scss */
+#console-messages .console-message, #console-messages .console-user-command, #console-messages #console-prompt {
+  padding: 5px 0;
+  color: #a3def2;
+  border-bottom: 1px solid #657b83;
+}
+/* line 62, ../sass/console.scss */
+#console-messages .console-debug-level .console-message-text {
+  color: #268bd2;
+}
+
+/* line 67, ../sass/console.scss */
+.search-status-bar-summary {
+  border-top: 1px solid #839496;
+  background: red;
+}
+
+/* line 72, ../sass/console.scss */
+#drawer-contents .tabbed-pane-header .tabbed-pane-header-tab {
+  height: 18px;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid #073642;
+}
+
+/* line 80, ../sass/console.scss */
+#search-results-pane-file-based .search-match .search-match-content {
+  color: #f4f4f4;
+}
+/* line 83, ../sass/console.scss */
+#search-results-pane-file-based .search-match .highlighted-match {
+  background: #73aabd;
+  padding: 0 3px;
+  color: #073642;
+}
+/* line 88, ../sass/console.scss */
+#search-results-pane-file-based .search-match:not(:hover) .search-match-line-number {
+  background: #073642;
+  color: #f4f4f4;
+}
+/* line 92, ../sass/console.scss */
+#search-results-pane-file-based .search-match:hover .search-match-line-number {
+  background: #268bd2;
+  color: #f4f4f4;
+}
+/* line 97, ../sass/console.scss */
+#search-results-pane-file-based .search-result {
+  padding: 5px 0;
+  background: #073642;
+  border: 1px solid #839496;
+  border-right: none;
+  border-left: none;
+  color: #f4f4f4;
+}
+/* line 104, ../sass/console.scss */
+#search-results-pane-file-based .search-result:hover {
+  color: #268bd2;
+  background: #586e75;
+}
+/* line 108, ../sass/console.scss */
+#search-results-pane-file-based .search-result .search-result-file-name, #search-results-pane-file-based .search-result .search-result-matches-count {
+  color: #f4f4f4;
+}
+
+/* line 114, ../sass/console.scss */
+.highlight {
+  color: #b58900;
+}
+
+/* line 118, ../sass/console.scss */
+.object-info-state-note {
+  background-color: #268bd2;
+  color: #073642;
+}
+
+/* line 123, ../sass/console.scss */
+body.platform-windows option {
+  background: #292929;
+  color: #a3def2;
+}
+
+/**
+ * Variables
+ *
+ */
+/* line 3, ../sass/panel-network.scss */
+.panel-status-bar {
+  flex-basis: 36px;
+  padding: 5px;
+  border-bottom: 1px solid #073642;
+}
+
+/* line 9, ../sass/panel-network.scss */
+.filter-bitset-filter li.selected {
+  background-color: #268bd2;
+  border-radius: 2px;
+}
+
+/* line 16, ../sass/panel-network.scss */
+.network-log-grid.data-grid th, .network-log-grid.data-grid th.sort-descending,
+.network-log-grid.data-grid th.sort-ascending {
+  background: #586e75;
+}
+/* line 21, ../sass/panel-network.scss */
+.network-log-grid.data-grid tr.filler {
+  background: #073642 !important;
+}
+/* line 25, ../sass/panel-network.scss */
+.network-log-grid.data-grid tr.odd:not(.selected) {
+  background-color: #586e75;
+}
+/* line 29, ../sass/panel-network.scss */
+.network-log-grid.data-grid th, .network-log-grid.data-grid td {
+  border: 1px solid #839496 !important;
+}
+/* line 33, ../sass/panel-network.scss */
+.network-log-grid.data-grid .data-container {
+  top: 37px;
+}
+
+/* line 38, ../sass/panel-network.scss */
+.data-grid table.data, .network-log-grid.data-grid table.data {
+  background-image: none;
+}
+
+/* line 43, ../sass/panel-network.scss */
+.panel.network .data-grid th {
+  background: #586e75;
+}
+/* line 46, ../sass/panel-network.scss */
+.panel.network .tabbed-pane-header .tabbed-pane-header-tab {
+  font-size: 10px;
+  padding-top: 7px;
+}
+
+/* line 52, ../sass/panel-network.scss */
+.network-summary-bar {
+  flex-basis: 30px;
+  padding: 5px;
+  background: #586e75;
+  border-top: 1px solid #839496;
+  color: #f4f4f4;
+}
+
+/* line 60, ../sass/panel-network.scss */
+#network-views .network-item-view .tabbed-pane-header {
+  flex-basis: 30px;
+  padding-top: 0;
+}
+
+/**
+ * Variables
+ *
+ */
+/* line 6, ../sass/panel-sources.scss */
+.panel.sources .sidebar-overlay {
+  box-shadow: none;
+}
+/* line 11, ../sass/panel-sources.scss */
+.panel.sources .split-view-contents-first .tabbed-pane-header {
+  flex-basis: 24px;
+}
+/* line 13, ../sass/panel-sources.scss */
+.panel.sources .split-view-contents-first .tabbed-pane-header .tabbed-pane-header-tab {
+  position: relative;
+  padding: 4px;
+  font-size: 10px;
+}
+/* line 17, ../sass/panel-sources.scss */
+.panel.sources .split-view-contents-first .tabbed-pane-header .tabbed-pane-header-tab .tabbed-pane-header-tab-title {
+  margin-right: 15px;
+}
+/* line 23, ../sass/panel-sources.scss */
+.panel.sources .split-view-contents-first .tabbed-pane-header .tabbed-pane-header-tab .close-button-gray {
+  position: absolute;
+  background-color: #93a1a1;
+  top: 8px;
+  left: inherit;
+  right: 5px;
+}
+/* line 29, ../sass/panel-sources.scss */
+.panel.sources .split-view-contents-first .tabbed-pane-header .tabbed-pane-header-tab .close-button-gray:hover {
+  background-color: #f4f4f4;
+  background-position: -175px -96px;
+}
+/* line 36, ../sass/panel-sources.scss */
+.panel.sources .split-view-contents-first .navigator li {
+  height: 20px;
+  font-size: 10px;
+  color: #93a1a1;
+}
+/* line 40, ../sass/panel-sources.scss */
+.panel.sources .split-view-contents-first .navigator li.selected {
+  padding-top: 2px;
+  background: #268bd2;
+  color: #f4f4f4;
+}
+/* line 49, ../sass/panel-sources.scss */
+.panel.sources #sources-panel-sources-view .sources-status-bar {
+  flex-basis: 30px;
+  padding: 5px;
+  background: #586e75;
+  border-top: 1px solid #839496;
+  color: #f4f4f4;
+}
+/* line 56, ../sass/panel-sources.scss */
+.panel.sources .sidebar-pane-stack#scripts-debug-sidebar-contents, .panel.sources #scripts-sidebar-stack-pane {
+  top: 29px;
+}
+/* line 61, ../sass/panel-sources.scss */
+.panel.sources .watch-expressions li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* line 64, ../sass/panel-sources.scss */
+.panel.sources .watch-expressions li.dimmed:hover {
+  background: #839496;
+}
+/* line 66, ../sass/panel-sources.scss */
+.panel.sources .watch-expressions li.dimmed:hover span {
+  color: #f4f4f4 !important;
+}
+/* line 70, ../sass/panel-sources.scss */
+.panel.sources .watch-expressions li.parent:hover {
+  background: #073642;
+}
+
+/* line 77, ../sass/panel-sources.scss */
+.cm-execution-line {
+  background-color: #073642 !important;
+  outline: none !important;
+}
+
+/* line 82, ../sass/panel-sources.scss */
+.cm-highlight {
+  -webkit-animation: none;
+  background: #839496;
+}
+
+/* line 87, ../sass/panel-sources.scss */
+.sidebar-pane .breakpoint-hit {
+  background: #1764a0;
+}
+
+/**
+ * Variables
+ *
+ */
+/* line 5, ../sass/panel-profile.scss */
+.panel.profiles .panel-enabler-view, .panel.profiles .profiles-sidebar-tree-box {
+  background: #586e75;
+  color: #f4f4f4;
+}
+/* line 9, ../sass/panel-profile.scss */
+.panel.profiles .panel-enabler-view button:not(.status-bar-item) {
+  background: #268bd2;
+  border: none;
+  border-radius: 3px;
+  color: #f4f4f4;
+}
+/* line 14, ../sass/panel-profile.scss */
+body.inactive .panel.profiles .panel-enabler-view button:not(.status-bar-item) {
+  background: #93a1a1;
+  color: #657b83;
+}
+
+/* line 22, ../sass/panel-profile.scss */
+.data-grid table.data {
+  background: none;
+}
+/* line 25, ../sass/panel-profile.scss */
+.data-grid .data-container {
+  top: 25px;
+}
+/* line 28, ../sass/panel-profile.scss */
+.data-grid th {
+  padding: 5px;
+  background: #586e75 !important;
+  border-bottom-color: #268bd2 !important;
+}
+/* line 33, ../sass/panel-profile.scss */
+.data-grid td {
+  padding: 5px;
+  color: #93a1a1;
+}
+/* line 36, ../sass/panel-profile.scss */
+.data-grid td a {
+  color: #73aabd;
+}
+/* line 40, ../sass/panel-profile.scss */
+.data-grid tr, .data-grid td {
+  color: #f4f4f4;
+  text-decoration: none !important;
+}
+/* line 44, ../sass/panel-profile.scss */
+.data-grid tr:nth-child(odd) {
+  background: #93a1a1;
+}
+/* line 47, ../sass/panel-profile.scss */
+.data-grid tr:nth-child(even) {
+  background: #586e75;
+}
+/* line 50, ../sass/panel-profile.scss */
+.data-grid tr:hover:not(:last-child) {
+  background: #268bd2;
+  text-decoration: none;
+}
+/* line 53, ../sass/panel-profile.scss */
+.data-grid tr:hover:not(:last-child) td {
+  color: #f4f4f4;
+}
+/* line 55, ../sass/panel-profile.scss */
+.data-grid tr:hover:not(:last-child) td a {
+  color: #a3def2;
+}
+/* line 59, ../sass/panel-profile.scss */
+.data-grid tr:hover:not(:last-child) .network-cell-subtitle {
+  color: #f4f4f4;
+}
+
+/* line 65, ../sass/panel-profile.scss */
+.network-cell-subtitle:hover {
+  color: #93a1a1;
+}
+/* line 67, ../sass/panel-profile.scss */
+.network-cell-subtitle:hover .data-grid-resizer {
+  width: 1px;
+  background: #839496;
+}
+
+/* line 73, ../sass/panel-profile.scss */
+.resources-dividers-label-bar, .overview-grid-dividers-background {
+  background: rgba(131, 148, 150, 0.4);
+}
+
+/* line 77, ../sass/panel-profile.scss */
+.overview-grid-window-resizer {
+  background: #93a1a1;
+  box-shadow: #586e75 1px 0 0, #586e75 -1px 0 0, #586e75 0 1px 0, #586e75 0 -1px 0;
+}
+
+/* line 82, ../sass/panel-profile.scss */
+.info-table {
+  padding: 1em;
+  background: #93a1a1;
+  border: 2px solid #657b83;
+}
+
+/**
+ * Variables
+ *
+ */
+/* line 5, ../sass/panel-timeline.scss */
+.panel.timeline .timeline-records-title, .panel.timeline .timeline-records-list {
+  background: #586e75;
+  color: #f4f4f4;
+}
+/* line 9, ../sass/panel-timeline.scss */
+.panel.timeline .resources-dividers-label-bar {
+  padding: 5px;
+  background: #839496;
+  color: #f4f4f4;
+}
+/* line 14, ../sass/panel-timeline.scss */
+.panel.timeline .timeline-details-view-title {
+  flex-basis: 30px;
+  padding: 5px;
+  background: #586e75;
+  border-top: 1px solid #839496;
+  color: #f4f4f4;
+}
+/* line 21, ../sass/panel-timeline.scss */
+.panel.timeline #timeline-overview-sidebar .sidebar-tree-item.selected {
+  background: #268bd2;
+  border-left: 6px solid #a3def2;
+  color: #f4f4f4;
+}
+/* line 25, ../sass/panel-timeline.scss */
+.panel.timeline #timeline-overview-sidebar .sidebar-tree-item.selected .icon {
+  background-color: #f4f4f4;
+}
+/* line 29, ../sass/panel-timeline.scss */
+.panel.timeline #timeline-overview-frames canvas {
+  background: #586e75;
+}
+/* line 32, ../sass/panel-timeline.scss */
+.panel.timeline #memory-graphs-container .split-view-contents-first {
+  background: #586e75;
+}
+/* line 34, ../sass/panel-timeline.scss */
+.panel.timeline #memory-graphs-container .split-view-contents-first .sidebar-tree.sidebar-tree-section {
+  text-shadow: none;
+  color: #93a1a1;
+}
+/* line 39, ../sass/panel-timeline.scss */
+.panel.timeline .timeline-aggregated-info-legend, .panel.timeline .timeline-details-view-block {
+  color: #f4f4f4;
+}
+/* line 42, ../sass/panel-timeline.scss */
+.panel.timeline .timeline-tree-item .data.dimmed, .panel.timeline .timeline-details-view-row-title {
+  color: #93a1a1;
+}
+/* line 45, ../sass/panel-timeline.scss */
+.panel.timeline .overview-grid-window-rulers {
+  background: #f4f4f4;
+}
+
+/* line 50, ../sass/panel-timeline.scss */
+.overview-grid-window {
+  background: #268bd2;
+}
+
+/* line 54, ../sass/panel-timeline.scss */
+#timeline-overview-sidebar .icon {
+  background: #93a1a1;
+}
+
+/**
+ * Variables
+ *
+ */
+/* line 5, ../sass/panel-resources.scss */
+.resources.panel .sidebar li {
+  height: 20px;
+  font-size: 10px;
+  color: #93a1a1;
+}
+/* line 9, ../sass/panel-resources.scss */
+.resources.panel .sidebar li .base-storage-tree-element-title, .resources.panel .sidebar li img {
+  padding-top: 3px;
+}
+/* line 12, ../sass/panel-resources.scss */
+.resources.panel .sidebar li.selected {
+  background: #268bd2;
+  color: #f4f4f4;
+}
+/* line 15, ../sass/panel-resources.scss */
+.resources.panel .sidebar li.selected .selection {
+  height: 22px;
+  background: #268bd2 !important;
+  border: none !important;
+}
+
+/**
+ * Variables
+ *
+ */
+/* line 4, ../sass/panel-audits.scss */
+.panel.audits .audit-launcher-view .audit-launcher-view-content {
+  background: #586e75;
+  color: #f4f4f4;
+}
+/* line 8, ../sass/panel-audits.scss */
+.panel.audits .sidebar-tree-section {
+  padding: 5px;
+  color: #93a1a1;
+  text-shadow: none;
+}
+/* line 13, ../sass/panel-audits.scss */
+.panel.audits .audit-launcher-view div.button-container > button {
+  background: #268bd2;
+  border: none;
+  border-radius: 3px;
+  color: #f4f4f4;
+}
+/* line 18, ../sass/panel-audits.scss */
+body.inactive .panel.audits .audit-launcher-view div.button-container > button {
+  background: #93a1a1;
+  color: #657b83;
+}
+
+/**
+ * Variables
+ *
+ */
+/* line 5, ../sass/settings.scss */
+#settings-screen .help-window-main {
+  color: #f4f4f4;
+  background: #586e75;
+  box-shadow: none;
+  border: 3px solid #073642;
+}
+/* line 11, ../sass/settings.scss */
+#settings-screen .help-container-wrapper label {
+  color: #93a1a1;
+}
+/* line 13, ../sass/settings.scss */
+#settings-screen .help-container-wrapper label:hover {
+  color: #f4f4f4;
+}
+/* line 17, ../sass/settings.scss */
+#settings-screen .help-section-title {
+  color: #268bd2;
+}
+/* line 20, ../sass/settings.scss */
+#settings-screen .settings-tab select {
+  padding: 5px;
+  -webkit-appearance: none;
+  background: #073642;
+  border: none;
+}
+/* line 26, ../sass/settings.scss */
+#settings-screen .tabbed-pane-header {
+  background: none !important;
+}
+/* line 28, ../sass/settings.scss */
+#settings-screen .tabbed-pane-header .tabbed-pane-header-tab {
+  padding-top: 9px;
+  background: none !important;
+}
+/* line 31, ../sass/settings.scss */
+#settings-screen .tabbed-pane-header .tabbed-pane-header-tab.selected {
+  color: #268bd2;
+}
+/* line 36, ../sass/settings.scss */
+#settings-screen .settings-tab .settings-list-container {
+  background: #f4f4f4;
+}
+/* line 39, ../sass/settings.scss */
+#settings-screen .settings-experiments-warning-subsection-warning {
+  color: #dc322f;
+}
+/* line 42, ../sass/settings.scss */
+#settings-screen .no-file-systems-message {
+  padding: 8px;
+  background: #073642;
+  color: #f4f4f4;
+}
+
+/* line 13, ../sass/styles.scss */
+::-webkit-scrollbar {
+  background-color: #31353a;
+  bottom: 0;
+  width: 15px !important;
+  height: 15px !important;
+}
+
+/* line 19, ../sass/styles.scss */
+::-webkit-scrollbar-track {
+  width: 10px;
+  border-radius: 10px;
+  background-color: #31353a;
+}
+
+/* line 24, ../sass/styles.scss */
+::-webkit-scrollbar-thumb {
+  width: 15px;
+  box-shadow: inset 0 0 1px #aaa;
+  border: 2px solid transparent;
+  border-left-width: 1.5px;
+  background-clip: content-box;
+  border-radius: 5px !important;
+  background-color: #4b4f53;
+}
+
+/* line 33, ../sass/styles.scss */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #54595e;
+  box-shadow: inset 0 0 1px #ccc;
+}
+
+/* line 37, ../sass/styles.scss */
+::-webkit-scrollbar-thumb:active {
+  background-color: #6c7177;
+  box-shadow: inset 0 0 1px #fff;
+}
+
+/* line 42, ../sass/styles.scss */
+.CodeMirror-hscrollbar {
+  right: 15px !important;
+  border-right: 1px solid #222 !important;
+}
+
+/* line 46, ../sass/styles.scss */
+.CodeMirror-vscrollbar {
+  bottom: 0 !important;
+}
+
+/* line 49, ../sass/styles.scss */
+.CodeMirror-scrollbar-filler {
+  display: none !important;
+}
+
+/* line 54, ../sass/styles.scss */
+.styles-section.matched-styles .properties li.parent .expand-element,
+.properties-tree li.parent::before,
+.section > .header::before,
+.sidebar-pane-title::before,
+.audit-result-tree li.parent::before,
+.status-bar-select-arrow,
+.data-grid th.sort-descending > div::after,
+.data-grid th.sort-ascending > div::after,
+.timeline-expandable-arrow,
+.filter-checkbox-filter .checkbox-filter-checkbox-checked {
+  opacity: 1;
+  background: none;
+  background-color: #268bd2;
+  -webkit-mask-image: url(Images/statusbarButtonGlyphs.png);
+}
+
+/* line 71, ../sass/styles.scss */
+.styles-section.matched-styles .properties li.parent .expand-element,
+.properties-tree li.parent::before,
+.section > .header::before,
+.sidebar-pane-title::before,
+.audit-result-tree li.parent::before,
+.timeline-expandable-collapsed .timeline-expandable-arrow {
+  -webkit-mask-position: -4px -96px;
+}
+
+/* line 81, ../sass/styles.scss */
+.styles-section.matched-styles .properties li.parent.expanded .expand-element,
+.properties-tree li.parent.expanded::before,
+.section.expanded > .header::before,
+.sidebar-pane-title.expanded::before,
+.audit-result-tree li.parent.expanded::before,
+.timeline-expandable-expanded .timeline-expandable-arrow {
+  -webkit-mask-position: -20px -96px;
+}
+
+/* line 91, ../sass/styles.scss */
+.status-bar-select-arrow,
+.data-grid th.sort-descending > div::after {
+  -webkit-mask-position: -20px -96px;
+}
+
+/* line 97, ../sass/styles.scss */
+.data-grid th.sort-ascending > div::after {
+  -webkit-mask-position: -4px -108px;
+}
+
+/* line 101, ../sass/styles.scss */
+.filter-checkbox-filter .checkbox-filter-checkbox-checked {
+  -webkit-mask-position: -129px -110px;
+  background-color: #f4f4f4;
+}
+
+/* line 107, ../sass/styles.scss */
+#console-messages,
+.console-view-wrapper,
+#console-view,
+.CodeMirror-scroll,
+.drawer .revision-history-drawer,
+.dialog .fill, .panel,
+.console-status-bar,
+.help-window-main,
+.tabbed-pane-content,
+.tabbed-pane-content.has-no-tabs,
+.sidebar-overlay,
+.styles-section.read-only,
+.split-view-vertical .sidebar-pane.composite .properties-tree,
+.panel:not(.elements),
+.panel:not(.extension-panel),
+#network-views .CodeMirror-lines,
+#script-view-fallback,
+.panel-status-bar,
+.sidebar, body.inactive .sidebar {
+  color: #f4f4f4;
+  background: #839496;
+}
+
+/* line 132, ../sass/styles.scss */
+#console-messages {
+  background: #002b36;
+}
+
+/* line 147, ../sass/styles.scss */
+.console-status-bar {
+  background: #073642;
+}
+
+/* line 166, ../sass/styles.scss */
+.tabbed-pane-header {
+  flex-basis: 36px;
+  color: #f4f4f4 !important;
+  background: #073642 !important;
+  border-bottom: 1px solid #586e75 !important;
+}
+/* line 171, ../sass/styles.scss */
+.tabbed-pane-header .tabbed-pane-header-tab {
+  box-sizing: initial;
+  text-align: center;
+  padding: 9px 4px;
+  height: 28px;
+  margin: 0;
+  background: #657b83 !important;
+  color: #93a1a1;
+  border-right: 1px solid #073642;
+}
+/* line 180, ../sass/styles.scss */
+.tabbed-pane-header .tabbed-pane-header-tab.selected {
+  background: #839496 !important;
+  color: #f4f4f4;
+  -webkit-border-image: none;
+  border: none;
+  border-right: 1px solid #073642;
+  border-left: 1px solid transparent;
+}
+
+/* line 191, ../sass/styles.scss */
+.tabbed-pane-content > .panel {
+  border-top: 5px solid #002b36;
+}
+
+/* line 195, ../sass/styles.scss */
+.overrides-view input[type=text], .overrides-view select,
+input, input[type="password"], input[type="text"],
+input[type="search"], isindex, .search-replace,
+.settings-tab input:not([type]), .settings-tab input[type="text"] {
+  padding: 5px 8px;
+  background-color: #839496;
+  border: 1px solid #073642;
+  color: #f4f4f4;
+}
+
+/* line 205, ../sass/styles.scss */
+.overrides-activate-device #tab-device,
+.overrides-activate-viewport #tab-viewport,
+.overrides-activate-user-agent #tab-user-agent,
+.overrides-activate-sensors #tab-sensors {
+  color: #a3def2;
+}
+
+/* line 212, ../sass/styles.scss */
+.overrides-view .overrides-footer {
+  padding: 5px;
+  background: #586e75;
+  border-top: 1px solid #839496;
+  color: #f4f4f4;
+}
+
+/* line 219, ../sass/styles.scss */
+button.overrides-swap {
+  background: #268bd2;
+  border: none;
+  margin: 5px 10px;
+  color: black;
+}
+
+/* line 226, ../sass/styles.scss */
+.status-bar {
+  background: #586e75;
+  border-top: 1px solid #839496;
+  color: #f4f4f4;
+}
+
+/* line 232, ../sass/styles.scss */
+.settings-tab-text-button {
+  margin: 0 5px;
+  background: #268bd2;
+  border: 0 !important;
+  border-radius: 2px;
+  box-shadow: none;
+  text-shadow: none;
+  color: #f4f4f4;
+}
+/* line 240, ../sass/styles.scss */
+.settings-tab-text-button:not(:disabled):hover {
+  background: #16527c;
+  box-shadow: none;
+  color: #f4f4f4;
+}
+
+/* line 247, ../sass/styles.scss */
+a {
+  color: #859900 !important;
+}
+/* line 249, ../sass/styles.scss */
+a:hover {
+  color: #2c3300 !important;
+}
+
+/* line 256, ../sass/styles.scss */
+button.status-bar-item .glyph.shadow, .glyph.shadow {
+  background-color: none;
+}
+
+/* line 260, ../sass/styles.scss */
+.glyph {
+  top: 0;
+}
+
+/*-- GLYPHS -- */
+/* line 265, ../sass/styles.scss */
+button.status-bar-item .glyph {
+  background-color: #93a1a1;
+}
+
+/* line 269, ../sass/styles.scss */
+.search-drawer-header label.search-config-label {
+  color: #93a1a1;
+}
+
+/* line 273, ../sass/styles.scss */
+button.scripts-step-over .glyph,
+button.scripts-step-into .glyph,
+button.scripts-step-out .glyph,
+.filters-toggle.toggled-active .glyph,
+button.status-bar-item.toggled-on .glyph,
+button.status-bar-item.toggled-on .glyph:not(.shadow),
+button.clear-status-bar-item:active .glyph,
+button.garbage-collect-status-bar-item:active .glyph,
+button.glue-async-status-bar-item:active .glyph,
+.filters-toggle.toggled-shown .glyph {
+  background-color: #268bd2;
+}
+
+/* line 286, ../sass/styles.scss */
+button.status-bar-item.toggled-on .glyph:not(.shadow) {
+  background-color: #268bd2 !important;
+}
+
+/* line 290, ../sass/styles.scss */
+button.status-bar-item .glyph {
+  left: -3px;
+}
+
+/* line 294, ../sass/styles.scss */
+.long-click-glyph {
+  color: #93a1a1;
+}
+
+/* line 299, ../sass/styles.scss */
+.section .properties .name {
+  color: #268bd2 !important;
+}
+/* line 301, ../sass/styles.scss */
+.section .properties .name.dimmed {
+  color: #a3def2;
+  opacity: 1;
+}
+
+/* line 308, ../sass/styles.scss */
+.sidebar-tree-section {
+  text-shadow: none;
+}
+
+/* line 312, ../sass/styles.scss */
+#scripts-debug-toolbar, .scripts-debug-toolbar, .sidebar-pane-title {
+  height: 30px;
+  flex: 0 0 30px;
+  padding: 5px;
+  flex: 0 0 30px;
+  background: #657b83 !important;
+  border-top: 1px solid #073642;
+  border-bottom: 1px solid #073642;
+  color: #f4f4f4;
+}
+/* line 321, ../sass/styles.scss */
+#scripts-debug-toolbar .status-bar-item, .scripts-debug-toolbar .status-bar-item, .sidebar-pane-title .status-bar-item {
+  top: -3px;
+}
+
+/* line 325, ../sass/styles.scss */
+.sidebar-pane {
+  padding: 5px 0;
+}
+/* line 327, ../sass/styles.scss */
+.sidebar-pane .breakpoints-list-deactivated {
+  background: #839496;
+  opacity: 1;
+}
+/* line 330, ../sass/styles.scss */
+.sidebar-pane .breakpoints-list-deactivated li {
+  padding: 5px;
+  color: #073642;
+}
+
+/* line 336, ../sass/styles.scss */
+.placard, .placard + .info {
+  background: #657b83;
+  border: none;
+}
+/* line 339, ../sass/styles.scss */
+.placard .subtitle, .placard + .info .subtitle {
+  color: #93a1a1 !important;
+}
+/* line 342, ../sass/styles.scss */
+.placard.selected, .placard + .info.selected {
+  background: #268bd2;
+  border: none;
+}
+/* line 345, ../sass/styles.scss */
+.placard.selected .subtitle, .placard + .info.selected .subtitle {
+  color: #073642 !important;
+}
+/* line 349, ../sass/styles.scss */
+.placard .subtitle, .placard + .info .subtitle {
+  color: #93a1a1;
+}
+
+/* line 354, ../sass/styles.scss */
+.placard:nth-of-type(2n) {
+  background-color: #586e75;
+}
+
+/* line 359, ../sass/styles.scss */
+.panel.elements .sidebar-pane-toolbar > select.select-settings {
+  -webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/paneSettingsButtons.png);
+  background: #f4f4f4;
+}
+/* line 362, ../sass/styles.scss */
+.panel.elements .sidebar-pane-toolbar > select.select-settings:hover {
+  background: #268bd2;
+}
+/* line 366, ../sass/styles.scss */
+.panel.elements .sidebar-pane-toolbar > select.select-filter {
+  -webkit-mask-image: url(Images/paneFilterButtons.png);
+  background: #f4f4f4;
+}
+/* line 369, ../sass/styles.scss */
+.panel.elements .sidebar-pane-toolbar > select.select-filter:hover {
+  background: #268bd2;
+}
+/* line 374, ../sass/styles.scss */
+.sidebar-pane-toolbar > .pane-title-button.add {
+  -webkit-mask-image: url(Images/paneAddButtons.png);
+  background: #f4f4f4;
+  background-image: none;
+}
+/* line 378, ../sass/styles.scss */
+.sidebar-pane-toolbar > .pane-title-button.add:hover {
+  background: #268bd2;
+}
+/* line 382, ../sass/styles.scss */
+.sidebar-pane-toolbar > .pane-title-button.pane-title-button.refresh {
+  -webkit-mask-image: url(Images/paneRefreshButtons.png);
+  background: #f4f4f4;
+  background-image: none;
+}
+/* line 386, ../sass/styles.scss */
+.sidebar-pane-toolbar > .pane-title-button.pane-title-button.refresh:hover {
+  background: #268bd2;
+}
+/* line 390, ../sass/styles.scss */
+.sidebar-pane-toolbar > .pane-title-button.element-state {
+  -webkit-mask-image: url(Images/paneElementStateButtons.png);
+  background: #f4f4f4;
+  background-image: none;
+}
+/* line 394, ../sass/styles.scss */
+.sidebar-pane-toolbar > .pane-title-button.element-state:hover {
+  background: #268bd2;
+}
+
+/* line 402, ../sass/styles.scss */
+.cm-breakpoint .CodeMirror-linenumber {
+  margin-left: 0 !important;
+  background-color: #73aabd;
+  border: none !important;
+  color: #002b36 !important;
+}
+
+/* line 409, ../sass/styles.scss */
+.cm-breakpoint.cm-execution-line .CodeMirror-linenumber {
+  background-color: #268bd2;
+  color: #f4f4f4 !important;
+}
+
+/* line 415, ../sass/styles.scss */
+.CodeMirror .CodeMirror-selected {
+  background-color: #073642;
+}
+/* line 419, ../sass/styles.scss */
+.CodeMirror pre {
+  line-height: 14px;
+}
+/* line 422, ../sass/styles.scss */
+.CodeMirror .CodeMirror-linenumber {
+  padding-left: 0;
+  color: #839496;
+}
+/* line 426, ../sass/styles.scss */
+.CodeMirror .CodeMirror-sizer {
+  margin-left: 40px;
+}
+/* line 429, ../sass/styles.scss */
+.CodeMirror .CodeMirror-gutters {
+  border-right: none;
+}
+/* line 432, ../sass/styles.scss */
+.CodeMirror .CodeMirror-gutter {
+  background-color: #586e75;
+}
+/* line 435, ../sass/styles.scss */
+.CodeMirror div.CodeMirror-cursor {
+  border-left: 1px solid #f4f4f4;
+  z-index: 3;
+}
+/* line 441, ../sass/styles.scss */
+.CodeMirror .cm-xml-tag {
+  color: #d33682;
+}
+/* line 444, ../sass/styles.scss */
+.CodeMirror .cm-xml-attribute {
+  color: #b58900;
+}
+/* line 447, ../sass/styles.scss */
+.CodeMirror .cm-xml-string {
+  color: #a3def2;
+}
+/* line 450, ../sass/styles.scss */
+.CodeMirror .cm-xml-comment {
+  color: #93a1a1;
+}
+/* line 453, ../sass/styles.scss */
+.CodeMirror .cm-punctation {
+  color: #cb4b16;
+}
+/* line 457, ../sass/styles.scss */
+.CodeMirror .cm-error {
+  color: #dc322f;
+}
+/* line 460, ../sass/styles.scss */
+.CodeMirror .cm-js-keyword, .CodeMirror .cm-keyword {
+  color: #b58900;
+}
+/* line 463, ../sass/styles.scss */
+.CodeMirror .cm-js-def, .CodeMirror .cm-variable {
+  color: #cb4b16;
+}
+/* line 466, ../sass/styles.scss */
+.CodeMirror .cm-js-string, .CodeMirror .cm-string {
+  color: #a3def2;
+}
+/* line 469, ../sass/styles.scss */
+.CodeMirror .cm-js-number, .CodeMirror .cm-number {
+  color: #d33682;
+}
+/* line 472, ../sass/styles.scss */
+.CodeMirror .cm-js-string-2 {
+  color: #cb4b16;
+}
+/* line 475, ../sass/styles.scss */
+.CodeMirror .cm-js-comment, .CodeMirror .cm-comment {
+  color: #93a1a1;
+}
+/* line 478, ../sass/styles.scss */
+.CodeMirror .cm-search-highlight {
+  color: #cb4b16;
+}
+/* line 481, ../sass/styles.scss */
+.CodeMirror .cm-css-qualifier, .CodeMirror .cm-operator {
+  color: #268bd2;
+}
+/* line 484, ../sass/styles.scss */
+.CodeMirror .cm-css-tag {
+  color: #73aabd;
+}
+/* line 487, ../sass/styles.scss */
+.CodeMirror .cm-css-operator {
+  color: #b58900;
+}
+/* line 490, ../sass/styles.scss */
+.CodeMirror .cm-css-property {
+  color: #73aabd;
+}
+/* line 493, ../sass/styles.scss */
+.CodeMirror .cm-css-string, .CodeMirror .cm-css-string-2 {
+  color: #cb4b16;
+}
+/* line 496, ../sass/styles.scss */
+.CodeMirror .cm-css-number {
+  color: #d33682;
+}
+/* line 499, ../sass/styles.scss */
+.CodeMirror .cm-css-variable-2 {
+  font-style: italic;
+  color: #859900;
+}
+/* line 503, ../sass/styles.scss */
+.CodeMirror .cm-css-atom, .CodeMirror .cm-css-keyword, .CodeMirror .cm-atom {
+  color: #d33682;
+}
+/* line 506, ../sass/styles.scss */
+.CodeMirror .cm-css-meta {
+  color: #dc322f;
+}
+/* line 510, ../sass/styles.scss */
+.CodeMirror .CodeMirror-matchingbracket {
+  background-color: #073642;
+  text-decoration: none;
+  color: #268bd2 !important;
+}
+/* line 515, ../sass/styles.scss */
+.CodeMirror .CodeMirror-nonmatchingbracket {
+  color: #dc322f !important;
+}
+
+/* line 520, ../sass/styles.scss */
+.dialog {
+  background-image: none;
+  background-color: #073642;
+  border-radius: 5px;
+  border: 5px solid #657b83;
+  box-shadow: #002b36 0 1px 8px;
+}
+/* line 526, ../sass/styles.scss */
+.dialog input.monospace {
+  height: 44px;
+  padding: 10px;
+  background-color: #586e75;
+  font-size: 24px !important;
+  line-height: 24px;
+  outline: none;
+}
+/* line 535, ../sass/styles.scss */
+.dialog .filtered-item-list-dialog > div.container {
+  background: #073642;
+  border: none;
+  top: 64px;
+}
+/* line 540, ../sass/styles.scss */
+.dialog .filtered-item-list-dialog .filtered-item-list-dialog-item {
+  background-color: #073642;
+  padding: 8px 10px;
+  border-bottom: 1px solid #586e75;
+  color: #839496;
+}
+/* line 545, ../sass/styles.scss */
+.dialog .filtered-item-list-dialog .filtered-item-list-dialog-item.selected {
+  background-color: #1764a0;
+  color: #f4f4f4;
+}
+/* line 548, ../sass/styles.scss */
+.dialog .filtered-item-list-dialog .filtered-item-list-dialog-item.selected span.highlight {
+  color: #073642;
+}
+/* line 552, ../sass/styles.scss */
+.dialog .filtered-item-list-dialog .filtered-item-list-dialog-item span.highlight {
+  color: #268bd2;
+}
+
+/* line 561, ../sass/styles.scss */
+.CodeMirror .CodeMirror-persist-highlight {
+  background-color: #268bd2;
+  border: #1764a0 1px solid;
+  color: #002b36;
+}
+
+/* line 567, ../sass/styles.scss */
+.popover {
+  -webkit-border-image: none;
+  background-color: none;
+  box-shadow: 1px 1px 10px #073642;
+  margin: 25px;
+  border: 25px transparent;
+}
+/* line 574, ../sass/styles.scss */
+.popover.bottom-left-arrow {
+  margin-top: -25px;
+}
+/* line 576, ../sass/styles.scss */
+.popover.bottom-left-arrow .arrow {
+  -webkit-mask-position: 0 -19px;
+  bottom: 6px;
+}
+/* line 582, ../sass/styles.scss */
+.popover.top-left-arrow .arrow {
+  top: 6px;
+}
+/* line 584, ../sass/styles.scss */
+.popover .arrow {
+  background-color: #657b83;
+  background-image: none;
+  -webkit-mask-image: url(Images/popoverArrows.png);
+}
+/* line 590, ../sass/styles.scss */
+.popover .content {
+  background-color: #073642 !important;
+  border: 5px solid #657b83;
+  border-radius: 5px;
+}
+/* line 596, ../sass/styles.scss */
+.popover .inline-block {
+  width: 100%;
+}
+/* line 600, ../sass/styles.scss */
+.popover .source-frame-popover-title, .popover .function-popover-title {
+  color: #93a1a1;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+/* line 606, ../sass/styles.scss */
+.popover .function-popover-title {
+  border-bottom: 1px solid #586e75;
+}
+/* line 610, ../sass/styles.scss */
+.popover .console-formatted-undefined {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+/* line 615, ../sass/styles.scss */
+.popover .source-frame-popover-tree {
+  top: 28px;
+  border-top: 1px solid #073642;
+}
+/* line 618, ../sass/styles.scss */
+.popover .source-frame-popover-tree .separator {
+  color: #f4f4f4;
+}
+/* line 623, ../sass/styles.scss */
+.popover table {
+  width: 100%;
+  color: #f4f4f4;
+}
+/* line 627, ../sass/styles.scss */
+.popover table tr {
+  line-height: 1.5em;
+}
+/* line 631, ../sass/styles.scss */
+.popover table td.timeline-details.timeline-details-row-title {
+  color: #73aabd;
+}
+/* line 635, ../sass/styles.scss */
+.popover table td.timeline-details-title {
+  padding: .5em;
+  border-bottom: 1px solid #657b83;
+}
+
+/* line 642, ../sass/styles.scss */
+.prefix {
+  font-weight: bold;
+  color: #fff;
+}
+
+/* line 647, ../sass/styles.scss */
+.suggest-box {
+  margin-top: 5px;
+  margin-bottom: -5px;
+  background: #073642 !important;
+  color: #93a1a1 !important;
+  border: none !important;
+  box-shadow: 1px 1px 10px #073642 !important;
+}
+/* line 654, ../sass/styles.scss */
+.suggest-box.above-anchor {
+  margin-top: -5px;
+  border-bottom: none;
+  border-top: 5px solid #586e75;
+}
+/* line 660, ../sass/styles.scss */
+.suggest-box .container {
+  border-radius: 3px;
+}
+/* line 664, ../sass/styles.scss */
+.suggest-box .container::-webkit-scrollbar {
+  display: none;
+}
+/* line 668, ../sass/styles.scss */
+.suggest-box .suggest-box-content-item {
+  padding: 2px;
+}
+/* line 670, ../sass/styles.scss */
+.suggest-box .suggest-box-content-item.selected {
+  background-color: #268bd2 !important;
+  color: #002b36;
+}
+/* line 675, ../sass/styles.scss */
+.suggest-box .suggest-box-content-item:hover:not(.selected) {
+  background-color: #073642 !important;
+  border: 1px solid transparent !important;
+}
+
+/* line 682, ../sass/styles.scss */
+fieldset[disabled] {
+  color: #839496;
+}
+/* line 684, ../sass/styles.scss */
+fieldset[disabled] input {
+  background-color: #839496 !important;
+  color: #073642 !important;
+}

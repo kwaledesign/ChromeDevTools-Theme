@@ -1,0 +1,68 @@
+/**
+ * Variables
+ *
+ */
+/* line 3, ../sass/panel-network.scss */
+.panel-status-bar {
+  flex-basis: 36px;
+  padding: 5px;
+  border-bottom: 1px solid #073642;
+}
+
+/* line 9, ../sass/panel-network.scss */
+.filter-bitset-filter li.selected {
+  background-color: #268bd2;
+  border-radius: 2px;
+}
+
+/* line 16, ../sass/panel-network.scss */
+.network-log-grid.data-grid th, .network-log-grid.data-grid th.sort-descending,
+.network-log-grid.data-grid th.sort-ascending {
+  background: #586e75;
+}
+/* line 21, ../sass/panel-network.scss */
+.network-log-grid.data-grid tr.filler {
+  background: #073642 !important;
+}
+/* line 25, ../sass/panel-network.scss */
+.network-log-grid.data-grid tr.odd:not(.selected) {
+  background-color: #586e75;
+}
+/* line 29, ../sass/panel-network.scss */
+.network-log-grid.data-grid th, .network-log-grid.data-grid td {
+  border: 1px solid #839496 !important;
+}
+/* line 33, ../sass/panel-network.scss */
+.network-log-grid.data-grid .data-container {
+  top: 37px;
+}
+
+/* line 38, ../sass/panel-network.scss */
+.data-grid table.data, .network-log-grid.data-grid table.data {
+  background-image: none;
+}
+
+/* line 43, ../sass/panel-network.scss */
+.panel.network .data-grid th {
+  background: #586e75;
+}
+/* line 46, ../sass/panel-network.scss */
+.panel.network .tabbed-pane-header .tabbed-pane-header-tab {
+  font-size: 10px;
+  padding-top: 7px;
+}
+
+/* line 52, ../sass/panel-network.scss */
+.network-summary-bar {
+  flex-basis: 30px;
+  padding: 5px;
+  background: #586e75;
+  border-top: 1px solid #839496;
+  color: #f4f4f4;
+}
+
+/* line 60, ../sass/panel-network.scss */
+#network-views .network-item-view .tabbed-pane-header {
+  flex-basis: 30px;
+  padding-top: 0;
+}

@@ -1,0 +1,22 @@
+//~~~~ RESOURCES ~~~~//
+
+@import "variables";
+.resources.panel {
+  .sidebar li {
+    height: 20px;
+    font-size: 10px;
+    color: $base1;
+    .base-storage-tree-element-title, img {
+      padding-top: 3px;
+    }
+    &.selected {
+      background: $blue;
+      color: $white;
+      .selection {
+        height: 22px;
+        background: $blue !important;
+        border: none !important;
+      }
+    }
+  }
+}

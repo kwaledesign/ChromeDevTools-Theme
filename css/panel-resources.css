@@ -1,0 +1,25 @@
+/**
+ * Variables
+ *
+ */
+/* line 5, ../sass/panel-resources.scss */
+.resources.panel .sidebar li {
+  height: 20px;
+  font-size: 10px;
+  color: #93a1a1;
+}
+/* line 9, ../sass/panel-resources.scss */
+.resources.panel .sidebar li .base-storage-tree-element-title, .resources.panel .sidebar li img {
+  padding-top: 3px;
+}
+/* line 12, ../sass/panel-resources.scss */
+.resources.panel .sidebar li.selected {
+  background: #268bd2;
+  color: #f4f4f4;
+}
+/* line 15, ../sass/panel-resources.scss */
+.resources.panel .sidebar li.selected .selection {
+  height: 22px;
+  background: #268bd2 !important;
+  border: none !important;
+}

@@ -1,0 +1,57 @@
+/**
+ * Variables
+ *
+ */
+/* line 5, ../sass/settings.scss */
+#settings-screen .help-window-main {
+  color: #f4f4f4;
+  background: #586e75;
+  box-shadow: none;
+  border: 3px solid #073642;
+}
+/* line 11, ../sass/settings.scss */
+#settings-screen .help-container-wrapper label {
+  color: #93a1a1;
+}
+/* line 13, ../sass/settings.scss */
+#settings-screen .help-container-wrapper label:hover {
+  color: #f4f4f4;
+}
+/* line 17, ../sass/settings.scss */
+#settings-screen .help-section-title {
+  color: #268bd2;
+}
+/* line 20, ../sass/settings.scss */
+#settings-screen .settings-tab select {
+  padding: 5px;
+  -webkit-appearance: none;
+  background: #073642;
+  border: none;
+}
+/* line 26, ../sass/settings.scss */
+#settings-screen .tabbed-pane-header {
+  background: none !important;
+}
+/* line 28, ../sass/settings.scss */
+#settings-screen .tabbed-pane-header .tabbed-pane-header-tab {
+  padding-top: 9px;
+  background: none !important;
+}
+/* line 31, ../sass/settings.scss */
+#settings-screen .tabbed-pane-header .tabbed-pane-header-tab.selected {
+  color: #268bd2;
+}
+/* line 36, ../sass/settings.scss */
+#settings-screen .settings-tab .settings-list-container {
+  background: #f4f4f4;
+}
+/* line 39, ../sass/settings.scss */
+#settings-screen .settings-experiments-warning-subsection-warning {
+  color: #dc322f;
+}
+/* line 42, ../sass/settings.scss */
+#settings-screen .no-file-systems-message {
+  padding: 8px;
+  background: #073642;
+  color: #f4f4f4;
+}

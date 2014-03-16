@@ -1,0 +1,103 @@
+/**
+ * Variables
+ *
+ */
+/* line 5, ../sass/panel-profile.scss */
+.panel.profiles .panel-enabler-view, .panel.profiles .profiles-sidebar-tree-box {
+  background: #586e75;
+  color: #f4f4f4;
+}
+/* line 9, ../sass/panel-profile.scss */
+.panel.profiles .panel-enabler-view button:not(.status-bar-item) {
+  background: #268bd2;
+  border: none;
+  border-radius: 3px;
+  color: #f4f4f4;
+}
+/* line 14, ../sass/panel-profile.scss */
+body.inactive .panel.profiles .panel-enabler-view button:not(.status-bar-item) {
+  background: #93a1a1;
+  color: #657b83;
+}
+
+/* line 22, ../sass/panel-profile.scss */
+.data-grid table.data {
+  background: none;
+}
+/* line 25, ../sass/panel-profile.scss */
+.data-grid .data-container {
+  top: 25px;
+}
+/* line 28, ../sass/panel-profile.scss */
+.data-grid th {
+  padding: 5px;
+  background: #586e75 !important;
+  border-bottom-color: #268bd2 !important;
+}
+/* line 33, ../sass/panel-profile.scss */
+.data-grid td {
+  padding: 5px;
+  color: #93a1a1;
+}
+/* line 36, ../sass/panel-profile.scss */
+.data-grid td a {
+  color: #73aabd;
+}
+/* line 40, ../sass/panel-profile.scss */
+.data-grid tr, .data-grid td {
+  color: #f4f4f4;
+  text-decoration: none !important;
+}
+/* line 44, ../sass/panel-profile.scss */
+.data-grid tr:nth-child(odd) {
+  background: #93a1a1;
+}
+/* line 47, ../sass/panel-profile.scss */
+.data-grid tr:nth-child(even) {
+  background: #586e75;
+}
+/* line 50, ../sass/panel-profile.scss */
+.data-grid tr:hover:not(:last-child) {
+  background: #268bd2;
+  text-decoration: none;
+}
+/* line 53, ../sass/panel-profile.scss */
+.data-grid tr:hover:not(:last-child) td {
+  color: #f4f4f4;
+}
+/* line 55, ../sass/panel-profile.scss */
+.data-grid tr:hover:not(:last-child) td a {
+  color: #a3def2;
+}
+/* line 59, ../sass/panel-profile.scss */
+.data-grid tr:hover:not(:last-child) .network-cell-subtitle {
+  color: #f4f4f4;
+}
+
+/* line 65, ../sass/panel-profile.scss */
+.network-cell-subtitle:hover {
+  color: #93a1a1;
+}
+/* line 67, ../sass/panel-profile.scss */
+.network-cell-subtitle:hover .data-grid-resizer {
+  width: 1px;
+  background: #839496;
+}
+
+/* line 73, ../sass/panel-profile.scss */
+.resources-dividers-label-bar, .overview-grid-dividers-background {
+  background: rgba(131, 148, 150, 0.4);
+}
+
+/* line 77, ../sass/panel-profile.scss */
+.overview-grid-window-resizer {
+  background: #93a1a1;
+  box-shadow: #586e75 1px 0 0, #586e75 -1px 0 0, #586e75 0 1px 0, #586e75 0 -1px 0;
+}
+
+/* line 82, ../sass/panel-profile.scss */
+.info-table {
+  padding: 1em;
+  background: #93a1a1;
+  border: 2px solid #657b83;
+}
