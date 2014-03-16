@@ -16,11 +16,11 @@ ol.elements-tree-outline .selected {
 }
 
 .webkit-html-tag {
-  color: $cyan;
+  color: $blue; //$cyan;
 }
 
 .webkit-html-tag-name {
-  color: $green;
+  color: $blue; //$green;
 }
 
 .webkit-html-attribute-name {
@@ -28,7 +28,7 @@ ol.elements-tree-outline .selected {
 }
 
 .webkit-html-attribute-value {
-  color: $base01; //$blue-light;
+  color: $cyan;//$base01; //$blue-light;
 }
 
 span.webkit-html-text-node.bogus {
@@ -36,7 +36,7 @@ span.webkit-html-text-node.bogus {
 }
 
 .webkit-html-pseudo-element {
-  color: $red;
+  color: $magenta; //$red;
 }
 
 .webkit-html-comment {

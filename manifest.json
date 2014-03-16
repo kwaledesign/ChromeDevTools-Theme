@@ -1,7 +1,8 @@
 {
   "name": "Solarized-Dark Chrome Dev Tools Theme",
-  "version": "0.0.3",
-  "description": "Enable DevTools experiments in about:flags, toggle \"Allow UI themes\" experiment.",
+  "author": "Sam Ashley",
+  "version": "0.0.4",
+  "description": "Solorized dark Chrome DevTools theme. Enable DevTools experiments in about:flags, toggle \"Allow UI themes\" experiment.",
   "devtools_page": "devtools.html",
 	"homepage_url": "https://github.com/kwaledesign/ChromeDevTools-Theme",
   "manifest_version": 2

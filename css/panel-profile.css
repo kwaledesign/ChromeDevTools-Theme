@@ -4,8 +4,8 @@
  */
 /* line 5, ../sass/panel-profile.scss */
 .panel.profiles .panel-enabler-view, .panel.profiles .profiles-sidebar-tree-box {
-  background: #586e75;
-  color: #f4f4f4;
+  background: #002b36;
+  color: #657b83;
 }
 /* line 9, ../sass/panel-profile.scss */
 .panel.profiles .panel-enabler-view button:not(.status-bar-item) {

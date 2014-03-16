@@ -24,12 +24,12 @@ ol.elements-tree-outline .selected .selection {
 
 /* line 18, ../sass/panel-elements.scss */
 .webkit-html-tag {
-  color: #2aa198;
+  color: #268bd2;
 }
 
 /* line 22, ../sass/panel-elements.scss */
 .webkit-html-tag-name {
-  color: #859900;
+  color: #268bd2;
 }
 
 /* line 26, ../sass/panel-elements.scss */
@@ -39,7 +39,7 @@ ol.elements-tree-outline .selected .selection {
 
 /* line 30, ../sass/panel-elements.scss */
 .webkit-html-attribute-value {
-  color: #586e75;
+  color: #2aa198;
 }
 
 /* line 34, ../sass/panel-elements.scss */
@@ -49,7 +49,7 @@ span.webkit-html-text-node.bogus {
 
 /* line 38, ../sass/panel-elements.scss */
 .webkit-html-pseudo-element {
-  color: #dc322f;
+  color: #d33682;
 }
 
 /* line 42, ../sass/panel-elements.scss */

@@ -3,18 +3,18 @@
 @import "variables";
 .panel.timeline {
   .timeline-records-title, .timeline-records-list {
-    background: $base01;
+    background: $base03;
     color: $white;
   }
   .resources-dividers-label-bar {
     padding: 5px;
-    background: $base0;
+    background: $base02;
     color: $white;
   }
   .timeline-details-view-title {
     flex-basis: 30px;
     padding: 5px;
-    background: $base01;
+    background: $base02;
     border-top: 1px solid $base0;
     color: $white;
   }

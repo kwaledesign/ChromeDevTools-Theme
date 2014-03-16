@@ -4,20 +4,20 @@
  */
 /* line 5, ../sass/panel-timeline.scss */
 .panel.timeline .timeline-records-title, .panel.timeline .timeline-records-list {
-  background: #586e75;
+  background: #002b36;
   color: #f4f4f4;
 }
 /* line 9, ../sass/panel-timeline.scss */
 .panel.timeline .resources-dividers-label-bar {
   padding: 5px;
-  background: #839496;
+  background: #073642;
   color: #f4f4f4;
 }
 /* line 14, ../sass/panel-timeline.scss */
 .panel.timeline .timeline-details-view-title {
   flex-basis: 30px;
   padding: 5px;
-  background: #586e75;
+  background: #073642;
   border-top: 1px solid #839496;
   color: #f4f4f4;
 }

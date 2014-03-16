@@ -124,12 +124,12 @@ ol.elements-tree-outline .selected .selection {
 
 /* line 18, ../sass/panel-elements.scss */
 .webkit-html-tag {
-  color: #2aa198;
+  color: #268bd2;
 }
 
 /* line 22, ../sass/panel-elements.scss */
 .webkit-html-tag-name {
-  color: #859900;
+  color: #268bd2;
 }
 
 /* line 26, ../sass/panel-elements.scss */
@@ -139,7 +139,7 @@ ol.elements-tree-outline .selected .selection {
 
 /* line 30, ../sass/panel-elements.scss */
 .webkit-html-attribute-value {
-  color: #586e75;
+  color: #2aa198;
 }
 
 /* line 34, ../sass/panel-elements.scss */
@@ -149,7 +149,7 @@ span.webkit-html-text-node.bogus {
 
 /* line 38, ../sass/panel-elements.scss */
 .webkit-html-pseudo-element {
-  color: #dc322f;
+  color: #d33682;
 }
 
 /* line 42, ../sass/panel-elements.scss */
@@ -610,7 +610,7 @@ body.platform-windows option {
 .panel.sources #sources-panel-sources-view .sources-status-bar {
   flex-basis: 30px;
   padding: 5px;
-  background: #586e75;
+  background: #073642;
   border-top: 1px solid #839496;
   color: #f4f4f4;
 }
@@ -659,8 +659,8 @@ body.platform-windows option {
  */
 /* line 5, ../sass/panel-profile.scss */
 .panel.profiles .panel-enabler-view, .panel.profiles .profiles-sidebar-tree-box {
-  background: #586e75;
-  color: #f4f4f4;
+  background: #002b36;
+  color: #657b83;
 }
 /* line 9, ../sass/panel-profile.scss */
 .panel.profiles .panel-enabler-view button:not(.status-bar-item) {
@@ -763,20 +763,20 @@ body.inactive .panel.profiles .panel-enabler-view button:not(.status-bar-item) {
  */
 /* line 5, ../sass/panel-timeline.scss */
 .panel.timeline .timeline-records-title, .panel.timeline .timeline-records-list {
-  background: #586e75;
+  background: #002b36;
   color: #f4f4f4;
 }
 /* line 9, ../sass/panel-timeline.scss */
 .panel.timeline .resources-dividers-label-bar {
   padding: 5px;
-  background: #839496;
+  background: #073642;
   color: #f4f4f4;
 }
 /* line 14, ../sass/panel-timeline.scss */
 .panel.timeline .timeline-details-view-title {
   flex-basis: 30px;
   padding: 5px;
-  background: #586e75;
+  background: #073642;
   border-top: 1px solid #839496;
   color: #f4f4f4;
 }
@@ -858,23 +858,28 @@ body.inactive .panel.profiles .panel-enabler-view button:not(.status-bar-item) {
  */
 /* line 4, ../sass/panel-audits.scss */
 .panel.audits .audit-launcher-view .audit-launcher-view-content {
-  background: #586e75;
-  color: #f4f4f4;
+  background: #002b36;
+  color: #93a1a1;
 }
 /* line 8, ../sass/panel-audits.scss */
 .panel.audits .sidebar-tree-section {
   padding: 5px;
   color: #93a1a1;
   text-shadow: none;
+  background: #002b36;
 }
-/* line 13, ../sass/panel-audits.scss */
+/* line 14, ../sass/panel-audits.scss */
+.panel.audits .sidebar {
+  background: #002b36;
+}
+/* line 15, ../sass/panel-audits.scss */
 .panel.audits .audit-launcher-view div.button-container > button {
   background: #268bd2;
   border: none;
   border-radius: 3px;
   color: #f4f4f4;
 }
-/* line 18, ../sass/panel-audits.scss */
+/* line 20, ../sass/panel-audits.scss */
 body.inactive .panel.audits .audit-launcher-view div.button-container > button {
   background: #93a1a1;
   color: #657b83;
@@ -1066,8 +1071,8 @@ body.inactive .panel.audits .audit-launcher-view div.button-container > button {
 #script-view-fallback,
 .panel-status-bar,
 .sidebar, body.inactive .sidebar {
-  color: #f4f4f4;
-  background: #839496;
+  color: #93a1a1;
+  background: #002b36;
 }
 
 /* line 132, ../sass/styles.scss */
@@ -1094,7 +1099,7 @@ body.inactive .panel.audits .audit-launcher-view div.button-container > button {
   padding: 9px 4px;
   height: 28px;
   margin: 0;
-  background: #657b83 !important;
+  background: #073642 !important;
   color: #93a1a1;
   border-right: 1px solid #073642;
 }
@@ -1104,7 +1109,7 @@ body.inactive .panel.audits .audit-launcher-view div.button-container > button {
   color: #f4f4f4;
   -webkit-border-image: none;
   border: none;
-  border-right: 1px solid #073642;
+  border-right: 1px solid #586e75;
   border-left: 1px solid transparent;
 }
 
@@ -1150,7 +1155,7 @@ button.overrides-swap {
 
 /* line 226, ../sass/styles.scss */
 .status-bar {
-  background: #586e75;
+  background: #073642;
   border-top: 1px solid #839496;
   color: #f4f4f4;
 }
@@ -1252,9 +1257,9 @@ button.status-bar-item .glyph {
   flex: 0 0 30px;
   padding: 5px;
   flex: 0 0 30px;
-  background: #657b83 !important;
-  border-top: 1px solid #073642;
-  border-bottom: 1px solid #073642;
+  background: #073642 !important;
+  border-top: 1px solid #586e75;
+  border-bottom: 1px solid #586e75;
   color: #f4f4f4;
 }
 /* line 321, ../sass/styles.scss */

@@ -4,23 +4,28 @@
  */
 /* line 4, ../sass/panel-audits.scss */
 .panel.audits .audit-launcher-view .audit-launcher-view-content {
-  background: #586e75;
-  color: #f4f4f4;
+  background: #002b36;
+  color: #93a1a1;
 }
 /* line 8, ../sass/panel-audits.scss */
 .panel.audits .sidebar-tree-section {
   padding: 5px;
   color: #93a1a1;
   text-shadow: none;
+  background: #002b36;
 }
-/* line 13, ../sass/panel-audits.scss */
+/* line 14, ../sass/panel-audits.scss */
+.panel.audits .sidebar {
+  background: #002b36;
+}
+/* line 15, ../sass/panel-audits.scss */
 .panel.audits .audit-launcher-view div.button-container > button {
   background: #268bd2;
   border: none;
   border-radius: 3px;
   color: #f4f4f4;
 }
-/* line 18, ../sass/panel-audits.scss */
+/* line 20, ../sass/panel-audits.scss */
 body.inactive .panel.audits .audit-launcher-view div.button-container > button {
   background: #93a1a1;
   color: #657b83;

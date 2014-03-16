@@ -3,8 +3,8 @@
 @import "variables";
 .panel.profiles {
   .panel-enabler-view, .profiles-sidebar-tree-box {
-    background: $base01;
-    color: $white;
+    background: $base03;
+    color: $base00; //$white;
   }
   .panel-enabler-view button:not(.status-bar-item) {
     background: $blue;

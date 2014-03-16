@@ -123,8 +123,8 @@
 #script-view-fallback,
 .panel-status-bar,
 .sidebar, body.inactive .sidebar {
-  color: $white;
-  background: $base0; //red;
+  color: $base1;
+  background: $base03;
 }
 
 
@@ -174,7 +174,7 @@
     padding: 9px 4px;
     height: 28px;
     margin: 0;
-    background: $base00 !important;
+    background: $base02 !important;
     color: $base1;
     border-right: 1px solid $base02;
     &.selected {
@@ -182,7 +182,7 @@
       color: $white;
       -webkit-border-image: none;
       border: none;
-      border-right: 1px solid $base02;
+      border-right: 1px solid $base01;
       border-left: 1px solid transparent;
     }
   }
@@ -224,7 +224,7 @@ button.overrides-swap {
 }
 
 .status-bar {
-  background: $base01;
+  background: $base02;//$base01;
   border-top: 1px solid $base0;
   color: $white;
 }
@@ -314,9 +314,9 @@ button.status-bar-item .glyph {
   flex: 0 0 30px;
   padding: 5px;
   flex: 0 0 30px;
-  background: $base00 !important;
-  border-top: 1px solid $base02;
-  border-bottom: 1px solid $base02;
+  background: $base02 !important;
+  border-top: 1px solid $base01;
+  border-bottom: 1px solid $base01;
   color: $white;
   .status-bar-item {
     top: -3px;
